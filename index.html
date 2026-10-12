@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>SEIMBANG · Dasar-Dasar Akuntansi</title>
+<title>SEIMBANG &#xb7; Dasar-Dasar Akuntansi</title>
 <meta name="description" content="Media pembelajaran interaktif Dasar-Dasar Akuntansi kelas X SMK: prinsip dan konsep akuntansi dasar.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=IBM+Plex+Mono:wght@500;600&display=swap">
 <style>
@@ -613,7 +613,7 @@ td.r, th.r { text-align: right; }
 .materi ol.langkah li::marker { font-family: var(--f-num); font-weight: 700; color: var(--brand); }
 .materi ul.rangkum { list-style: none; padding: 0; margin: 0 0 14px; display: grid; gap: 8px; }
 .materi ul.rangkum li { position: relative; padding: 10px 12px 10px 40px; border-radius: 12px; background: var(--plus-soft); }
-.materi ul.rangkum li::before { content: "✓"; position: absolute; left: 11px; top: 11px; width: 20px; height: 20px; border-radius: 50%; background: var(--plus); color: #fff; display: grid; place-items: center; font: 700 .72rem/1 var(--f-body); }
+.materi ul.rangkum li::before { content: "\2713 "; position: absolute; left: 11px; top: 11px; width: 20px; height: 20px; border-radius: 50%; background: var(--plus); color: #fff; display: grid; place-items: center; font: 700 .72rem/1 var(--f-body); }
 .materi .istilah { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface-2); }
 .materi .istilah b { width: 100%; font-size: .74rem; letter-spacing: .09em; text-transform: uppercase; color: var(--ink-3); }
 .materi .istilah span { cursor: pointer; padding: 4px 10px; border-radius: 99px; background: var(--surface); border: 1px solid var(--line); font-size: .85rem; font-weight: 700; }
@@ -710,15 +710,15 @@ button.jr-opt:hover { border-color: var(--brand); }
 /* Jika halaman ini di-host di luar Apps Script (mis. GitHub Pages), isi dengan URL aplikasi web Apps Script. */
 window.SEIMBANG_API_URL = 'https://script.google.com/macros/s/AKfycbzbDbBSbzutCxxe7IDmEvfLffmf3zoRBTdzIAee5qm7Y-hpYEEmMyGXD4EJ-ijYu9hUIg/exec';
 /* =========================================================
-   KONTEN PEMBELAJARAN — SEIMBANG
+   KONTEN PEMBELAJARAN \u2014 SEIMBANG
    Mapel  : Dasar-Dasar Akuntansi dan Keuangan Lembaga (Kelas X SMK, Fase E)
    Elemen : Prinsip-prinsip dan Konsep Akuntansi Dasar
-   Konteks: usaha jasa "Laundry Kilat" milik Raka di Kota Jambi
+   Konteks: usaha jasa "Laundry Kilat" milik Pak Herry di Kota Jambi
    ========================================================= */
 
 const CP = {
   mapel: 'Dasar-Dasar Akuntansi dan Keuangan Lembaga',
-  fase: 'Fase E · Kelas X SMK',
+  fase: 'Fase E \u00b7 Kelas X SMK',
   elemen: 'Prinsip-prinsip dan Konsep Akuntansi Dasar',
   teks: 'Pada akhir fase E, peserta didik mampu memahami pengertian akuntansi, tujuan pencatatan akuntansi, pihak-pihak yang membutuhkan informasi akuntansi, prinsip-prinsip akuntansi, serta konsep akuntansi dasar.',
   cakupan: 'Media ini mencakup bagian akuntansi dasar dari elemen tersebut dan menutupnya dengan persamaan dasar akuntansi sebagai jembatan menuju siklus akuntansi perusahaan jasa.',
@@ -738,13 +738,13 @@ const MISI = [
     tp: 0,
     bagian: [
       {
-        judul: 'Uang Raka ke mana?',
-        html: `<p>Raka, lulusan SMK, membuka usaha <b>Laundry Kilat</b> di dekat kos-kosan mahasiswa di Kota Jambi. Pelanggannya ramai setiap hari. Anehnya, di akhir bulan uangnya hampir habis.</p>
-<p>Raka bingung. Ia tidak tahu berapa yang sudah dibelanjakan untuk deterjen, pelanggan mana yang belum membayar, dan apakah usahanya untung atau rugi.</p>
+        judul: 'Uang Pak Herry ke mana?',
+        html: `<p>Pak Herry membuka usaha <b>Laundry Kilat</b> di dekat kos-kosan mahasiswa di Kota Jambi. Pelanggannya ramai setiap hari. Anehnya, di akhir bulan uangnya hampir habis.</p>
+<p>Pak Herry bingung. Ia tidak tahu berapa yang sudah dibelanjakan untuk deterjen, pelanggan mana yang belum membayar, dan apakah usahanya untung atau rugi.</p>
 <div class="analogi"><b>Bayangkan</b><p>Kamu main gim tanpa melihat skor dan sisa nyawa. Kamu tidak tahu sedang menang atau kalah. Usaha tanpa catatan keuangan rasanya seperti itu.</p></div>
-<p>Masalah Raka sederhana: <b>ia tidak mencatat.</b> Di media ini kamu akan membantu Raka menata keuangan Laundry Kilat langkah demi langkah.</p>`,
+<p>Masalah Pak Herry sederhana: <b>ia tidak mencatat.</b> Di media ini kamu akan membantu Pak Herry menata keuangan Laundry Kilat langkah demi langkah.</p>`,
         pemantik: {
-          tanya: 'Menurutmu, catatan apa saja yang seharusnya dimiliki Raka?',
+          tanya: 'Menurutmu, catatan apa saja yang seharusnya dimiliki Pak Herry?',
           jawab: 'Uang yang masuk dan keluar (kas), pelanggan yang belum membayar (piutang), utang ke toko deterjen, dan barang milik usaha seperti mesin cuci dan setrika. Semua catatan itu adalah bahan akuntansi.'
         }
       },
@@ -783,12 +783,12 @@ const MISI = [
           judul: 'Cek cepat: transaksi atau bukan?',
           opsi: ['Transaksi', 'Bukan'],
           item: [
-            { t: 'Raka membeli deterjen Rp150.000 dan menerima nota.', a: 0, why: 'Ada uang keluar, nilainya jelas, dan ada bukti nota.' },
-            { t: 'Raka berkenalan dengan calon pelanggan baru.', a: 1, why: 'Tidak ada perubahan keuangan yang bisa diukur dengan uang.' },
+            { t: 'Pak Herry membeli deterjen Rp150.000 dan menerima nota.', a: 0, why: 'Ada uang keluar, nilainya jelas, dan ada bukti nota.' },
+            { t: 'Pak Herry berkenalan dengan calon pelanggan baru.', a: 1, why: 'Tidak ada perubahan keuangan yang bisa diukur dengan uang.' },
             { t: 'Pelanggan membayar cucian 5 kg sebesar Rp35.000 lewat QRIS.', a: 0, why: 'Kas bertambah karena pendapatan jasa, buktinya struk digital.' },
-            { t: 'Raka berencana mengecat ulang papan nama tokonya bulan depan.', a: 1, why: 'Baru rencana. Belum terjadi dan belum ada uang yang berpindah.' },
-            { t: 'Raka menerima pesanan cucian lewat WhatsApp. Cucian belum diantar dan belum dibayar.', a: 1, why: 'Pesanan saja belum mengubah keuangan. Transaksi terjadi saat jasa selesai atau uang diterima.' },
-            { t: 'Raka membayar sewa ruko lewat transfer bank dan menyimpan bukti transfernya.', a: 0, why: 'Kas berkurang untuk beban sewa dan ada bukti transfer.' }
+            { t: 'Pak Herry berencana mengecat ulang papan nama tokonya bulan depan.', a: 1, why: 'Baru rencana. Belum terjadi dan belum ada uang yang berpindah.' },
+            { t: 'Pak Herry menerima pesanan cucian lewat WhatsApp. Cucian belum diantar dan belum dibayar.', a: 1, why: 'Pesanan saja belum mengubah keuangan. Transaksi terjadi saat jasa selesai atau uang diterima.' },
+            { t: 'Pak Herry membayar sewa ruko lewat transfer bank dan menyimpan bukti transfernya.', a: 0, why: 'Kas berkurang untuk beban sewa dan ada bukti transfer.' }
           ]
         }
       },
@@ -801,7 +801,7 @@ const MISI = [
 <li><b>Penggolongan</b><span>Mengelompokkan transaksi ke akun yang sama: Kas, Perlengkapan, Utang Usaha, dan lainnya.<br><i>Hasil: buku besar.</i></span></li>
 <li><b>Pengikhtisaran</b><span>Meringkas saldo semua akun untuk memeriksa keseimbangan.<br><i>Hasil: neraca saldo.</i></span></li>
 <li><b>Pelaporan</b><span>Menyusun laporan untuk pembaca.<br><i>Hasil: laporan laba rugi, perubahan modal, dan posisi keuangan.</i></span></li>
-<li><b>Penafsiran</b><span>Membaca laporan untuk mengambil keputusan, misalnya Raka memutuskan menambah satu mesin cuci karena laba naik.</span></li>
+<li><b>Penafsiran</b><span>Membaca laporan untuk mengambil keputusan, misalnya Pak Herry memutuskan menambah satu mesin cuci karena laba naik.</span></li>
 </ol>
 <div class="tahu"><b>Tahukah kamu?</b><p>Rangkaian ini diulang setiap periode, misalnya setiap bulan. Karena berulang seperti lingkaran, para akuntan menyebutnya <b>siklus akuntansi</b>. Kamu akan mempelajarinya lebih dalam setelah media ini.</p></div>
 <p class="note"><b>Trik mengingat:</b> "<b>I-Pe-Pe-Pe-Pe-Pe</b>": Identifikasi, Pencatatan, Penggolongan, Pengikhtisaran, Pelaporan, Penafsiran.</p>`
@@ -819,7 +819,7 @@ const MISI = [
           { d: 'Sistem informasi akuntansi', b: 'Merancang sistem dan aplikasi pencatatan, termasuk aplikasi akuntansi di komputer dan HP.' },
           { d: 'Akuntansi anggaran', b: 'Menyusun rencana keuangan untuk periode mendatang lalu membandingkannya dengan kenyataan.' }
         ],
-        html2: `<p><b>Profesi akuntan</b> antara lain akuntan publik (auditor independen), akuntan perusahaan, akuntan pemerintah, dan akuntan pendidik. Lulusan SMK Akuntansi bisa bekerja sebagai staf administrasi keuangan, kasir, staf pajak, operator aplikasi akuntansi, atau membuka usaha sendiri seperti Raka.</p>`
+        html2: `<p><b>Profesi akuntan</b> antara lain akuntan publik (auditor independen), akuntan perusahaan, akuntan pemerintah, dan akuntan pendidik. Lulusan SMK Akuntansi bisa bekerja sebagai staf administrasi keuangan, kasir, staf pajak, operator aplikasi akuntansi, atau membuka usaha sendiri seperti Pak Herry.</p>`
       },
       {
         judul: 'Tujuan dan peran akuntansi',
@@ -842,7 +842,7 @@ const MISI = [
 <li><b>Akuntansi</b> mengolah transaksi keuangan menjadi informasi untuk mengambil keputusan.</li>
 <li><b>Transaksi</b> punya tiga ciri: mengubah keuangan, terukur dengan uang, dan ada buktinya.</li>
 <li>Bukti transaksi: nota, faktur, kuitansi, bukti kas masuk/keluar, memo, dan struk digital.</li>
-<li>Kegiatan akuntansi: identifikasi → pencatatan → penggolongan → pengikhtisaran → pelaporan → penafsiran.</li>
+<li>Kegiatan akuntansi: identifikasi \u2192 pencatatan \u2192 penggolongan \u2192 pengikhtisaran \u2192 pelaporan \u2192 penafsiran.</li>
 <li>Bidang akuntansi antara lain keuangan, manajemen, biaya, perpajakan, pemeriksaan, pemerintahan, sistem informasi, dan anggaran.</li>
 <li>Tujuannya: mengetahui posisi keuangan dan kinerja, pertanggungjawaban, serta perencanaan.</li>
 </ul>
@@ -884,7 +884,7 @@ const MISI = [
 <dt>Pemilik</dt><dd><i>"Usahaku untung atau rugi? Perlu tambah modal? Berapa yang boleh kuambil untuk keperluan pribadi?"</i><br>Pemilik melihat laba dan perkembangan modal.</dd>
 <dt>Manajer / pimpinan</dt><dd><i>"Biaya mana yang bisa dihemat? Berapa tarif cuci yang tepat? Perlu tambah karyawan?"</i><br>Manajer memakai informasi untuk merencanakan, mengendalikan biaya, dan menilai kinerja.</dd>
 </dl>
-<div class="tahu"><b>Tahukah kamu?</b><p>Di usaha kecil seperti Laundry Kilat, pemilik sering sekaligus menjadi manajer. Raka mengelola sendiri usahanya, jadi ia membaca laporan dengan dua "topi" sekaligus.</p></div>`
+<div class="tahu"><b>Tahukah kamu?</b><p>Di usaha kecil seperti Laundry Kilat, pemilik sering sekaligus menjadi manajer. Pak Herry mengelola sendiri usahanya, jadi ia membaca laporan dengan dua "topi" sekaligus.</p></div>`
       },
       {
         judul: 'Pihak eksternal',
@@ -903,7 +903,7 @@ const MISI = [
           opsi: ['Internal', 'Eksternal'],
           item: [
             { t: 'Bank menilai pengajuan kredit Laundry Kilat.', a: 1, why: 'Bank berada di luar usaha dan berkepentingan atas pinjaman.' },
-            { t: 'Raka menghitung laba bulan ini.', a: 0, why: 'Raka adalah pemilik yang mengelola usahanya.' },
+            { t: 'Pak Herry menghitung laba bulan ini.', a: 0, why: 'Pak Herry adalah pemilik yang mengelola usahanya.' },
             { t: 'Kantor pajak memeriksa laporan usaha.', a: 1, why: 'Pemerintah adalah pihak luar.' }
           ]
         }
@@ -928,16 +928,16 @@ const MISI = [
 <div class="lap-r"><span>Peralatan</span><span>Rp8.000.000</span></div>
 <div class="lap-r tot"><span>Total harta</span><span>Rp23.200.000</span></div>
 <div class="lap-r"><span>Utang usaha</span><span>Rp500.000</span></div>
-<div class="lap-r"><span>Modal Raka</span><span>Rp22.700.000</span></div>
+<div class="lap-r"><span>Modal Pak Herry</span><span>Rp22.700.000</span></div>
 <div class="lap-r tot"><span>Total utang dan modal</span><span>Rp23.200.000</span></div></div>
 <p>Perhatikan: laba dari laporan pertama masuk ke laporan kedua, dan modal akhir dari laporan kedua masuk ke neraca. Ketiga laporan saling terhubung.</p>`,
         cek: {
           judul: 'Cek cepat: laporan mana yang paling dibutuhkan?',
           opsi: ['Laba rugi', 'Perubahan modal', 'Neraca'],
           item: [
-            { t: 'Raka ingin tahu apakah bulan ini usahanya untung.', a: 0, why: 'Laba atau rugi terlihat di laporan laba rugi.' },
+            { t: 'Pak Herry ingin tahu apakah bulan ini usahanya untung.', a: 0, why: 'Laba atau rugi terlihat di laporan laba rugi.' },
             { t: 'Bank ingin membandingkan harta dengan utang Laundry Kilat.', a: 2, why: 'Neraca menyajikan harta, utang, dan modal pada tanggal tertentu.' },
-            { t: 'Raka ingin tahu berapa modalnya berkurang karena prive.', a: 1, why: 'Prive dan laba yang mengubah modal disajikan di laporan perubahan modal.' }
+            { t: 'Pak Herry ingin tahu berapa modalnya berkurang karena prive.', a: 1, why: 'Prive dan laba yang mengubah modal disajikan di laporan perubahan modal.' }
           ]
         }
       },
@@ -945,7 +945,7 @@ const MISI = [
         judul: 'Syarat informasi yang berguna',
         html: `<p>Laporan baru berguna kalau informasinya berkualitas. Menurut kerangka konseptual Ikatan Akuntan Indonesia (IAI), informasi harus <b>relevan</b> dan <b>menyajikan keadaan dengan jujur</b>. Kegunaannya makin tinggi bila juga dapat dibandingkan, dapat diverifikasi, tepat waktu, dan dapat dipahami. Ketuk kartunya.</p>`,
         flip: [
-          { d: 'Relevan', b: 'Membantu pembaca mengambil keputusan. Contoh: data biaya listrik per bulan membantu Raka memutuskan untuk berhemat.' },
+          { d: 'Relevan', b: 'Membantu pembaca mengambil keputusan. Contoh: data biaya listrik per bulan membantu Pak Herry memutuskan untuk berhemat.' },
           { d: 'Penyajian jujur (andal)', b: 'Sesuai kenyataan, lengkap, netral, dan bebas dari kesalahan penting. Kas di laporan harus sama dengan uang yang benar-benar ada.' },
           { d: 'Dapat dibandingkan', b: 'Bisa dibandingkan antarbulan atau antarusaha karena metodenya sama. Laporan Oktober bisa disandingkan dengan November.' },
           { d: 'Dapat diverifikasi', b: 'Orang lain yang memeriksa bukti akan sampai pada angka yang sama. Karena itu setiap catatan butuh nota atau kuitansi.' },
@@ -971,7 +971,7 @@ const MISI = [
       petunjuk: 'Tentukan apakah setiap pihak termasuk pengguna internal atau eksternal.',
       wadah: ['Internal', 'Eksternal'],
       item: [
-        { t: 'Raka, pemilik Laundry Kilat', a: 0, why: 'Pemilik butuh info laba dan perkembangan usaha.' },
+        { t: 'Pak Herry, pemilik Laundry Kilat', a: 0, why: 'Pemilik butuh info laba dan perkembangan usaha.' },
         { t: 'Bank pemberi pinjaman', a: 1, why: 'Kreditur menilai kemampuan membayar pinjaman dan bunga.' },
         { t: 'Manajer operasional', a: 0, why: 'Manajer memakai info untuk merencanakan dan mengendalikan biaya.' },
         { t: 'Toko pemasok deterjen', a: 1, why: 'Pemasok menilai kemampuan membayar utang dagang.' },
@@ -1011,7 +1011,7 @@ const MISI = [
         judul: 'Empat asumsi dasar',
         html: `<p><b>Asumsi</b> adalah anggapan dasar yang diterima begitu saja ketika mencatat, tanpa perlu dibuktikan setiap kali. Ketuk kartu untuk melihat contohnya di Laundry Kilat.</p>`,
         flip: [
-          { d: 'Kesatuan usaha (entitas ekonomi)', b: 'Keuangan usaha terpisah dari keuangan pribadi pemilik. Uang belanja rumah Raka tidak boleh dicatat sebagai beban laundry.' },
+          { d: 'Kesatuan usaha (entitas ekonomi)', b: 'Keuangan usaha terpisah dari keuangan pribadi pemilik. Uang belanja rumah Pak Herry tidak boleh dicatat sebagai beban laundry.' },
           { d: 'Kelangsungan usaha (going concern)', b: 'Usaha dianggap akan terus beroperasi. Karena itu mesin cuci disusutkan selama umur pakainya, tidak langsung dianggap habis.' },
           { d: 'Periode akuntansi', b: 'Umur usaha dibagi ke periode tertentu supaya kinerja bisa diukur. Laundry Kilat menyusun laporan setiap akhir bulan.' },
           { d: 'Unit moneter', b: 'Transaksi dicatat dalam satuan uang (rupiah) dan nilai rupiah dianggap stabil. Keramahan pelayan tidak dicatat karena tidak bisa diukur dengan uang.' }
@@ -1063,7 +1063,7 @@ const MISI = [
       {
         judul: 'Jurus kata kunci',
         html: `<p>Soal kasus prinsip akuntansi lebih mudah dikerjakan jika kamu mencari <b>kata kuncinya</b>:</p>
-<div class="tbl-wrap"><table><thead><tr><th>Jika soal menyebut…</th><th>Kemungkinan jawabannya</th></tr></thead><tbody>
+<div class="tbl-wrap"><table><thead><tr><th>Jika soal menyebut\u2026</th><th>Kemungkinan jawabannya</th></tr></thead><tbody>
 <tr><td>uang pribadi, keperluan rumah, prive</td><td><b>Kesatuan usaha</b></td></tr>
 <tr><td>terus beroperasi, disusutkan selama umur pakai</td><td><b>Kelangsungan usaha</b></td></tr>
 <tr><td>setiap bulan, setiap tahun, akhir periode</td><td><b>Periode akuntansi</b></td></tr>
@@ -1080,9 +1080,9 @@ const MISI = [
           judul: 'Latihan jurus kata kunci',
           opsi: ['Kesatuan usaha', 'Biaya historis', 'Materialitas'],
           item: [
-            { t: 'Raka membayar SPP adiknya dari kas laundry. Akuntan mencatatnya sebagai prive.', a: 0, why: 'Kata kunci "keperluan pribadi" → kesatuan usaha.' },
-            { t: 'Setrika dicatat sebesar harga belinya, Rp1.200.000, walau kini harganya Rp1.500.000.', a: 1, why: 'Kata kunci "harga beli walau harga pasar naik" → biaya historis.' },
-            { t: 'Stapler seharga Rp20.000 langsung dicatat sebagai beban.', a: 2, why: 'Kata kunci "jumlah kecil, langsung dibebankan" → materialitas.' }
+            { t: 'Pak Herry membayar SPP anaknya dari kas laundry. Akuntan mencatatnya sebagai prive.', a: 0, why: 'Kata kunci "keperluan pribadi" \u2192 kesatuan usaha.' },
+            { t: 'Setrika dicatat sebesar harga belinya, Rp1.200.000, walau kini harganya Rp1.500.000.', a: 1, why: 'Kata kunci "harga beli walau harga pasar naik" \u2192 biaya historis.' },
+            { t: 'Stapler seharga Rp20.000 langsung dicatat sebagai beban.', a: 2, why: 'Kata kunci "jumlah kecil, langsung dibebankan" \u2192 materialitas.' }
           ]
         }
       },
@@ -1104,7 +1104,7 @@ const MISI = [
       judul: 'Kasus di Laundry Kilat',
       petunjuk: 'Baca setiap kasus, lalu pilih asumsi atau prinsip yang berlaku. Gunakan jurus kata kunci.',
       item: [
-        { t: 'Raka membayar tagihan listrik rumahnya memakai uang kas laundry. Akuntan menolak mencatatnya sebagai beban usaha.', opsi: ['Kesatuan usaha', 'Konsistensi', 'Materialitas', 'Periode akuntansi'], a: 0, why: 'Keuangan pribadi harus dipisahkan dari keuangan usaha. Pengeluaran itu dicatat sebagai prive.' },
+        { t: 'Pak Herry membayar tagihan listrik rumahnya memakai uang kas laundry. Akuntan menolak mencatatnya sebagai beban usaha.', opsi: ['Kesatuan usaha', 'Konsistensi', 'Materialitas', 'Periode akuntansi'], a: 0, why: 'Keuangan pribadi harus dipisahkan dari keuangan usaha. Pengeluaran itu dicatat sebagai prive.' },
         { t: 'Setrika uap dibeli Rp1.200.000. Setahun kemudian harga pasarnya Rp1.500.000, tetapi catatan tidak diubah.', opsi: ['Unit moneter', 'Biaya historis', 'Pengungkapan penuh', 'Objektivitas'], a: 1, why: 'Aset dicatat sebesar harga perolehannya.' },
         { t: 'Cucian asrama selesai tanggal 30 Oktober, dibayar tanggal 5 November. Pendapatan dicatat bulan Oktober.', opsi: ['Penandingan', 'Kelangsungan usaha', 'Pengakuan pendapatan', 'Konsistensi'], a: 2, why: 'Pendapatan diakui saat jasa selesai diberikan.' },
         { t: 'Laundry Kilat selalu memakai metode garis lurus untuk menyusutkan mesin cuci setiap tahun.', opsi: ['Konsistensi', 'Materialitas', 'Objektivitas', 'Unit moneter'], a: 0, why: 'Metode yang sama dipakai terus supaya laporan dapat dibandingkan.' },
@@ -1139,15 +1139,15 @@ const MISI = [
 <p>Sisi kiri menunjukkan <b>apa yang dimiliki</b> usaha. Sisi kanan menunjukkan <b>dari mana asalnya</b>: dari pinjaman pihak lain (utang) atau dari pemilik (modal).</p>
 <p>Karena setiap harta pasti punya asal, kedua sisi <b>selalu sama besar</b>. Setiap transaksi memengaruhi minimal dua hal sehingga persamaan tetap seimbang. Ini disebut <b>prinsip dualitas</b>.</p>
 <p>Rumusnya bisa dibalik sesuai yang dicari:</p>
-<ul class="dots"><li>Modal = Harta − Utang</li><li>Utang = Harta − Modal</li></ul>`,
+<ul class="dots"><li>Modal = Harta \u2212 Utang</li><li>Utang = Harta \u2212 Modal</li></ul>`,
         pemantik: {
-          tanya: 'Harta Laundry Kilat Rp30.000.000 dan utangnya Rp6.000.000. Berapa modal Raka?',
-          jawab: 'Modal = Harta − Utang = Rp30.000.000 − Rp6.000.000 = Rp24.000.000.'
+          tanya: 'Harta Laundry Kilat Rp30.000.000 dan utangnya Rp6.000.000. Berapa modal Pak Herry?',
+          jawab: 'Modal = Harta \u2212 Utang = Rp30.000.000 \u2212 Rp6.000.000 = Rp24.000.000.'
         }
       },
       {
         judul: 'Pendapatan, beban, dan prive',
-        html: `<div class="eq eq-sm"><span>Harta</span><i>=</i><span>Utang</span><i>+</i><span>Modal + Pendapatan − Beban − Prive</span></div>
+        html: `<div class="eq eq-sm"><span>Harta</span><i>=</i><span>Utang</span><i>+</i><span>Modal + Pendapatan \u2212 Beban \u2212 Prive</span></div>
 <ul class="dots">
 <li><b>Pendapatan</b> menambah modal. Contoh: menerima uang jasa cuci.</li>
 <li><b>Beban</b> mengurangi modal. Contoh: membayar listrik, gaji, sewa.</li>
@@ -1160,7 +1160,7 @@ const MISI = [
           opsi: ['Pendapatan', 'Beban', 'Prive', 'Bukan ketiganya'],
           item: [
             { t: 'Laundry Kilat menerima pinjaman dari bank Rp5.000.000.', a: 3, why: 'Kas naik dan utang naik. Pinjaman bukan pendapatan.' },
-            { t: 'Raka mengambil kas usaha untuk membayar SPP adiknya.', a: 2, why: 'Untuk keperluan pribadi pemilik, jadi prive.' },
+            { t: 'Pak Herry mengambil kas usaha untuk membayar SPP anaknya.', a: 2, why: 'Untuk keperluan pribadi pemilik, jadi prive.' },
             { t: 'Membayar gaji karyawan bulan ini.', a: 1, why: 'Biaya untuk menjalankan usaha, jadi beban.' },
             { t: 'Menerima uang jasa cuci kiloan dari pelanggan.', a: 0, why: 'Hasil dari menjual jasa, jadi pendapatan.' }
           ]
@@ -1172,13 +1172,13 @@ const MISI = [
 <ol class="steps">
 <li><b>Akun apa yang terpengaruh?</b><span>Cari minimal dua akun.</span></li>
 <li><b>Masuk kelompok apa?</b><span>Harta, utang, atau modal (pendapatan, beban, dan prive masuk ke modal).</span></li>
-<li><b>Bertambah atau berkurang, berapa?</b><span>Tulis tanda + atau − dan jumlahnya.</span></li>
+<li><b>Bertambah atau berkurang, berapa?</b><span>Tulis tanda + atau \u2212 dan jumlahnya.</span></li>
 <li><b>Cek keseimbangan</b><span>Perubahan sisi kiri harus sama dengan perubahan sisi kanan.</span></li>
 </ol>
 <div class="contoh"><b>Contoh 1</b><p><i>4 Oktober: membeli deterjen dan plastik Rp1.500.000 secara kredit.</i></p>
-<ol class="langkah"><li>Akun: Perlengkapan dan Utang Usaha.</li><li>Perlengkapan = harta. Utang Usaha = utang.</li><li>Perlengkapan +Rp1.500.000. Utang Usaha +Rp1.500.000.</li><li>Harta +1.500.000 = Utang +1.500.000 + Modal 0. <b>Seimbang ✓</b></li></ol></div>
+<ol class="langkah"><li>Akun: Perlengkapan dan Utang Usaha.</li><li>Perlengkapan = harta. Utang Usaha = utang.</li><li>Perlengkapan +Rp1.500.000. Utang Usaha +Rp1.500.000.</li><li>Harta +1.500.000 = Utang +1.500.000 + Modal 0. <b>Seimbang \u2713</b></li></ol></div>
 <div class="contoh"><b>Contoh 2</b><p><i>20 Oktober: membayar listrik dan air Rp600.000.</i></p>
-<ol class="langkah"><li>Akun: Kas dan Beban Listrik.</li><li>Kas = harta. Beban listrik mengurangi modal.</li><li>Kas −Rp600.000. Modal −Rp600.000.</li><li>Harta −600.000 = Utang 0 + Modal −600.000. <b>Seimbang ✓</b></li></ol></div>`
+<ol class="langkah"><li>Akun: Kas dan Beban Listrik.</li><li>Kas = harta. Beban listrik mengurangi modal.</li><li>Kas \u2212Rp600.000. Modal \u2212Rp600.000.</li><li>Harta \u2212600.000 = Utang 0 + Modal \u2212600.000. <b>Seimbang \u2713</b></li></ol></div>`
       },
       {
         judul: 'Tabel persamaan dasar',
@@ -1186,7 +1186,7 @@ const MISI = [
 <div class="tbl-wrap"><table class="ptbl"><thead><tr><th rowspan="2">Tgl</th><th colspan="4" class="grp">Harta</th><th class="eqc" rowspan="2">=</th><th class="grp">Utang</th><th class="eqc" rowspan="2">+</th><th class="grp">Modal</th></tr>
 <tr><th class="r">Kas</th><th class="r">Piutang</th><th class="r">Perlk.</th><th class="r">Peralatan</th><th class="r">Utang Usaha</th><th class="r">Modal</th></tr></thead><tbody>
 <tr><td>1/10</td><td class="r up">+20.000</td><td></td><td></td><td></td><td></td><td></td><td></td><td class="r up">+20.000</td></tr>
-<tr><td>2/10</td><td class="r dn">−8.000</td><td></td><td></td><td class="r up">+8.000</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>2/10</td><td class="r dn">\u22128.000</td><td></td><td></td><td class="r up">+8.000</td><td></td><td></td><td></td><td></td></tr>
 <tr class="saldo"><td>Saldo</td><td class="r">12.000</td><td class="r">0</td><td class="r">0</td><td class="r">8.000</td><td></td><td class="r">0</td><td></td><td class="r">20.000</td></tr>
 <tr><td>4/10</td><td></td><td></td><td class="r up">+1.500</td><td></td><td></td><td class="r up">+1.500</td><td></td><td></td></tr>
 <tr><td>10/10</td><td class="r up">+3.200</td><td></td><td></td><td></td><td></td><td></td><td></td><td class="r up">+3.200</td></tr>
@@ -1280,9 +1280,9 @@ const AKUN_SIM = {
   modal: ['Modal']
 };
 
-/* Transaksi Laundry Kilat — Oktober 2026 (Misi 4) */
+/* Transaksi Laundry Kilat \u2014 Oktober 2026 (Misi 4) */
 const TRX_LAUNDRY = [
-  { tgl: '1 Okt', t: 'Raka menyetor uang tunai Rp20.000.000 sebagai modal awal usaha.', ub: { 'Kas': 20000000, 'Modal': 20000000 }, ket: 'Setoran modal', arah: [1, 0, 1] },
+  { tgl: '1 Okt', t: 'Pak Herry menyetor uang tunai Rp20.000.000 sebagai modal awal usaha.', ub: { 'Kas': 20000000, 'Modal': 20000000 }, ket: 'Setoran modal', arah: [1, 0, 1] },
   { tgl: '2 Okt', t: 'Membeli 2 mesin cuci seharga Rp8.000.000 secara tunai.', ub: { 'Kas': -8000000, 'Peralatan': 8000000 }, ket: 'Pertukaran harta', arah: [0, 0, 0] },
   { tgl: '4 Okt', t: 'Membeli deterjen, pewangi, dan plastik kemasan Rp1.500.000 secara kredit.', ub: { 'Perlengkapan': 1500000, 'Utang Usaha': 1500000 }, ket: 'Pembelian kredit', arah: [1, 1, 0] },
   { tgl: '10 Okt', t: 'Menerima pendapatan jasa laundry secara tunai Rp3.200.000.', ub: { 'Kas': 3200000, 'Modal': 3200000 }, ket: 'Pendapatan', arah: [1, 0, 1] },
@@ -1291,7 +1291,7 @@ const TRX_LAUNDRY = [
   { tgl: '22 Okt', t: 'Membayar sebagian utang kepada toko deterjen Rp1.000.000.', ub: { 'Kas': -1000000, 'Utang Usaha': -1000000 }, ket: 'Pelunasan utang', arah: [-1, -1, 0] },
   { tgl: '25 Okt', t: 'Menerima pelunasan piutang dari asrama mahasiswa Rp1.800.000.', ub: { 'Kas': 1800000, 'Piutang Usaha': -1800000 }, ket: 'Pertukaran harta', arah: [0, 0, 0] },
   { tgl: '30 Okt', t: 'Membayar gaji karyawan Rp1.200.000.', ub: { 'Kas': -1200000, 'Modal': -1200000 }, ket: 'Beban', arah: [-1, 0, -1] },
-  { tgl: '31 Okt', t: 'Raka mengambil uang kas Rp500.000 untuk keperluan pribadi.', ub: { 'Kas': -500000, 'Modal': -500000 }, ket: 'Prive', arah: [-1, 0, -1] }
+  { tgl: '31 Okt', t: 'Pak Herry mengambil uang kas Rp500.000 untuk keperluan pribadi.', ub: { 'Kas': -500000, 'Modal': -500000 }, ket: 'Prive', arah: [-1, 0, -1] }
 ];
 
 /* ---------------- BANK SOAL KUIS ---------------- */
@@ -1325,7 +1325,7 @@ const GAME_AKUN = [
   ['Asuransi Dibayar di Muka', 0, 'Hak perlindungan di masa depan, jadi termasuk harta.'],
   ['Utang Usaha', 1], ['Utang Bank', 1], ['Utang Gaji', 1],
   ['Pendapatan Diterima di Muka', 1, 'Uang sudah diterima tetapi jasa belum diberikan, jadi masih kewajiban (utang).'],
-  ['Modal Raka', 2], ['Prive Raka', 2, 'Prive termasuk kelompok modal dan sifatnya mengurangi modal.'],
+  ['Modal Pak Herry', 2], ['Prive Pak Herry', 2, 'Prive termasuk kelompok modal dan sifatnya mengurangi modal.'],
   ['Pendapatan Jasa Laundry', 3], ['Pendapatan Bunga', 3], ['Pendapatan Sewa', 3],
   ['Beban Gaji', 4], ['Beban Listrik dan Air', 4], ['Beban Sewa', 4], ['Beban Iklan', 4], ['Beban Perlengkapan', 4],
   ['Beban Penyusutan Peralatan', 4], ['Beban Asuransi', 4]
@@ -1333,7 +1333,7 @@ const GAME_AKUN = [
 
 /* ---------------- GAME 3: DETEKTIF PRINSIP ---------------- */
 const GAME_DETEKTIF = [
-  { a: 'Kesatuan usaha', k: ['Ini tentang siapa pemilik uang.', 'Raka membayar tagihan listrik rumahnya memakai kas laundry.', 'Akuntan mencatatnya sebagai prive, bukan beban usaha.'] },
+  { a: 'Kesatuan usaha', k: ['Ini tentang siapa pemilik uang.', 'Pak Herry membayar tagihan listrik rumahnya memakai kas laundry.', 'Akuntan mencatatnya sebagai prive, bukan beban usaha.'] },
   { a: 'Biaya historis', k: ['Ini tentang angka yang dicatat untuk sebuah aset.', 'Mesin cuci dibeli Rp4.000.000. Kini harga pasarnya Rp5.000.000.', 'Catatan tetap Rp4.000.000, sesuai harga saat dibeli.'] },
   { a: 'Pengakuan pendapatan', k: ['Ini tentang kapan sesuatu dicatat.', 'Uang dari pelanggan baru diterima bulan depan.', 'Cucian sudah selesai diserahkan, jadi pendapatan dicatat bulan ini.'] },
   { a: 'Penandingan', k: ['Ini tentang pasangan dalam satu periode.', 'Gaji karyawan Oktober baru dibayar 1 November.', 'Gaji itu dicatat sebagai beban Oktober, bersama pendapatan Oktober.'] },
@@ -1346,33 +1346,33 @@ const GAME_DETEKTIF = [
   { a: 'Pengungkapan penuh', k: ['Ini tentang keterbukaan.', 'Ada perkara hukum dengan pemasok yang belum selesai.', 'Hal itu dijelaskan dalam catatan atas laporan keuangan.'] }
 ];
 
-/* ---------------- GAME 4: JURAGAN SEIMBANG (papan bisnis online) ---------------- */
+/* ---------------- GAME 4: JURAGAN SEIMBANG (papan bisnis online, Kabupaten Batang Hari) ---------------- */
 const JURAGAN = {
   kasAwal: 15000000, gaji: 2000000, bonus: 300000, hadiahPos: 1000000, bonusAudit: 500000,
   pajak: 500000, pinjam: 3000000, batasUtang: 20000000, maksPemain: 4, batasWaktu: 75000,
-  grup: { A: 'Kuliner', B: 'Jasa', C: 'Usaha keluarga', D: 'Wisata & niaga' },
+  grup: { A: 'Kuliner', B: 'Jasa', C: 'Usaha rakyat', D: 'Niaga & kebun' },
   // tipe: mulai | usaha | kartu | pos | pajak | bank | audit | istirahat
   petak: [
     { tipe: 'mulai', n: 'MULAI', s: 'Mulai' },
-    { tipe: 'usaha', n: 'Warung Pempek Angso Duo', s: 'Pempek', g: 'A', h: 2000000, w: 500000 },
+    { tipe: 'usaha', n: 'Warung Pempek Pasar Muara Bulian', s: 'Pempek', g: 'A', h: 2000000, w: 500000 },
     { tipe: 'kartu', n: 'Kartu Transaksi', s: 'Kartu' },
-    { tipe: 'usaha', n: 'Fotokopi Kampus Mendalo', s: 'Fotokopi', g: 'A', h: 2000000, w: 500000 },
+    { tipe: 'usaha', n: 'Kedai Kopi Maro Sebo Ilir', s: 'Kopi', g: 'A', h: 2000000, w: 500000 },
     { tipe: 'pos', n: 'Pos Akuntan', s: 'Pos Akuntan' },
-    { tipe: 'bank', n: 'Bank Daerah', s: 'Bank' },
-    { tipe: 'usaha', n: 'Laundry Telanaipura', s: 'Laundry', g: 'B', h: 3000000, w: 750000 },
-    { tipe: 'usaha', n: 'Kedai Kopi Tanggo Rajo', s: 'Kopi', g: 'B', h: 3000000, w: 750000 },
+    { tipe: 'bank', n: 'Bank Daerah Batang Hari', s: 'Bank' },
+    { tipe: 'usaha', n: 'Laundry Muara Bulian', s: 'Laundry', g: 'B', h: 3000000, w: 750000 },
+    { tipe: 'usaha', n: 'Fotokopi Kampus Muara Bulian', s: 'Fotokopi', g: 'B', h: 3000000, w: 750000 },
     { tipe: 'pajak', n: 'Bayar Pajak UMKM', s: 'Pajak' },
-    { tipe: 'usaha', n: 'Toko Batik Seberang', s: 'Batik', g: 'B', h: 3500000, w: 900000 },
+    { tipe: 'usaha', n: 'Toko Batik Mersam', s: 'Batik', g: 'B', h: 3500000, w: 900000 },
     { tipe: 'audit', n: 'Pemeriksaan Auditor', s: 'Audit' },
-    { tipe: 'usaha', n: 'Bengkel Motor Jelutung', s: 'Bengkel', g: 'C', h: 4000000, w: 1000000 },
+    { tipe: 'usaha', n: 'Bengkel Motor Pemayung', s: 'Bengkel', g: 'C', h: 4000000, w: 1000000 },
     { tipe: 'kartu', n: 'Kartu Transaksi', s: 'Kartu' },
-    { tipe: 'usaha', n: 'Katering Kota Baru', s: 'Katering', g: 'C', h: 4000000, w: 1000000 },
-    { tipe: 'usaha', n: 'Rental Perahu Danau Sipin', s: 'Perahu', g: 'C', h: 4500000, w: 1100000 },
+    { tipe: 'usaha', n: 'Katering Maro Sebo Ulu', s: 'Katering', g: 'C', h: 4000000, w: 1000000 },
+    { tipe: 'usaha', n: 'Agen Karet Batin XXIV', s: 'Karet', g: 'C', h: 4500000, w: 1100000 },
     { tipe: 'istirahat', n: 'Istirahat di Taman', s: 'Istirahat' },
-    { tipe: 'usaha', n: 'Homestay Muaro Jambi', s: 'Homestay', g: 'D', h: 5000000, w: 1250000 },
+    { tipe: 'usaha', n: 'Homestay Muara Tembesi', s: 'Homestay', g: 'D', h: 5000000, w: 1250000 },
     { tipe: 'pos', n: 'Pos Akuntan', s: 'Pos Akuntan' },
-    { tipe: 'usaha', n: 'Ekspedisi Batanghari', s: 'Ekspedisi', g: 'D', h: 5500000, w: 1400000 },
-    { tipe: 'usaha', n: 'Toko Songket Jambi', s: 'Songket', g: 'D', h: 6000000, w: 1500000 }
+    { tipe: 'usaha', n: 'Ekspedisi Sungai Batanghari', s: 'Ekspedisi', g: 'D', h: 5500000, w: 1400000 },
+    { tipe: 'usaha', n: 'Kebun Sawit Bajubang', s: 'Sawit', g: 'D', h: 6000000, w: 1500000 }
   ],
   // kartu transaksi: k = kas, a = aset non-kas, u = utang, m = modal (selisih), arah = [harta, utang, modal]
   kartu: [
@@ -1397,24 +1397,24 @@ const JURAGAN = {
 
 /* Soal pilihan ganda untuk Pos Akuntan dan Audit di Juragan Seimbang */
 const SOAL_GAME = [
-  { q: 'Mencampur uang belanja rumah dengan kas usaha melanggar …', o: ['Kesatuan usaha', 'Konsistensi', 'Materialitas'], a: 0 },
-  { q: 'Aset dicatat sebesar harga saat dibeli. Ini prinsip …', o: ['Biaya historis', 'Pengungkapan penuh', 'Periode akuntansi'], a: 0 },
-  { q: 'Pendapatan dicatat saat jasa selesai, walau uang belum diterima, sesuai prinsip …', o: ['Pengakuan pendapatan', 'Unit moneter', 'Objektivitas'], a: 0 },
-  { q: 'Pihak yang menilai kemampuan usaha membayar pinjaman adalah …', o: ['Kreditur (bank)', 'Pelanggan', 'Masyarakat'], a: 0 },
-  { q: 'Bukti untuk transaksi pembelian secara kredit adalah …', o: ['Faktur', 'Kuitansi', 'Nota kontan'], a: 0 },
-  { q: 'Laporan yang menunjukkan harta, utang, dan modal pada tanggal tertentu adalah …', o: ['Neraca', 'Laporan laba rugi', 'Laporan perubahan modal'], a: 0 },
-  { q: 'Rumus modal adalah …', o: ['Harta − Utang', 'Harta + Utang', 'Utang − Harta'], a: 0 },
-  { q: 'Prive menyebabkan …', o: ['Harta dan modal berkurang', 'Harta dan beban bertambah', 'Utang berkurang'], a: 0 },
-  { q: 'Usaha dianggap akan terus beroperasi. Ini asumsi …', o: ['Kelangsungan usaha', 'Periode akuntansi', 'Kesatuan usaha'], a: 0 },
-  { q: 'Penggaris Rp10.000 langsung dicatat sebagai beban karena prinsip …', o: ['Materialitas', 'Konsistensi', 'Penandingan'], a: 0 },
-  { q: 'Kegiatan akuntansi yang pertama adalah …', o: ['Identifikasi transaksi', 'Pelaporan', 'Penggolongan'], a: 0 },
-  { q: 'Manajer termasuk pengguna informasi akuntansi …', o: ['Internal', 'Eksternal', 'Bukan pengguna'], a: 0 },
-  { q: 'Membayar utang kepada pemasok menyebabkan …', o: ['Harta dan utang berkurang', 'Harta dan modal berkurang', 'Utang bertambah'], a: 0 },
-  { q: 'Informasi akuntansi bisa dicek ulang dengan bukti. Karakteristik ini disebut …', o: ['Dapat diverifikasi', 'Tepat waktu', 'Dapat dipahami'], a: 0 },
-  { q: 'Laporan keuangan Laundry Kilat disusun setiap bulan sesuai asumsi …', o: ['Periode akuntansi', 'Unit moneter', 'Biaya historis'], a: 0 },
-  { q: 'Menerima pinjaman bank menyebabkan …', o: ['Harta dan utang bertambah', 'Harta dan modal bertambah', 'Modal bertambah, utang berkurang'], a: 0 },
-  { q: 'Gaji Oktober yang dibayar 1 November dicatat sebagai beban Oktober. Ini prinsip …', o: ['Penandingan', 'Biaya historis', 'Materialitas'], a: 0 },
-  { q: 'Laporan yang menunjukkan laba atau rugi satu periode adalah …', o: ['Laporan laba rugi', 'Neraca', 'Daftar aset'], a: 0 }
+  { q: 'Mencampur uang belanja rumah dengan kas usaha melanggar \u2026', o: ['Kesatuan usaha', 'Konsistensi', 'Materialitas'], a: 0 },
+  { q: 'Aset dicatat sebesar harga saat dibeli. Ini prinsip \u2026', o: ['Biaya historis', 'Pengungkapan penuh', 'Periode akuntansi'], a: 0 },
+  { q: 'Pendapatan dicatat saat jasa selesai, walau uang belum diterima, sesuai prinsip \u2026', o: ['Pengakuan pendapatan', 'Unit moneter', 'Objektivitas'], a: 0 },
+  { q: 'Pihak yang menilai kemampuan usaha membayar pinjaman adalah \u2026', o: ['Kreditur (bank)', 'Pelanggan', 'Masyarakat'], a: 0 },
+  { q: 'Bukti untuk transaksi pembelian secara kredit adalah \u2026', o: ['Faktur', 'Kuitansi', 'Nota kontan'], a: 0 },
+  { q: 'Laporan yang menunjukkan harta, utang, dan modal pada tanggal tertentu adalah \u2026', o: ['Neraca', 'Laporan laba rugi', 'Laporan perubahan modal'], a: 0 },
+  { q: 'Rumus modal adalah \u2026', o: ['Harta \u2212 Utang', 'Harta + Utang', 'Utang \u2212 Harta'], a: 0 },
+  { q: 'Prive menyebabkan \u2026', o: ['Harta dan modal berkurang', 'Harta dan beban bertambah', 'Utang berkurang'], a: 0 },
+  { q: 'Usaha dianggap akan terus beroperasi. Ini asumsi \u2026', o: ['Kelangsungan usaha', 'Periode akuntansi', 'Kesatuan usaha'], a: 0 },
+  { q: 'Penggaris Rp10.000 langsung dicatat sebagai beban karena prinsip \u2026', o: ['Materialitas', 'Konsistensi', 'Penandingan'], a: 0 },
+  { q: 'Kegiatan akuntansi yang pertama adalah \u2026', o: ['Identifikasi transaksi', 'Pelaporan', 'Penggolongan'], a: 0 },
+  { q: 'Manajer termasuk pengguna informasi akuntansi \u2026', o: ['Internal', 'Eksternal', 'Bukan pengguna'], a: 0 },
+  { q: 'Membayar utang kepada pemasok menyebabkan \u2026', o: ['Harta dan utang berkurang', 'Harta dan modal berkurang', 'Utang bertambah'], a: 0 },
+  { q: 'Informasi akuntansi bisa dicek ulang dengan bukti. Karakteristik ini disebut \u2026', o: ['Dapat diverifikasi', 'Tepat waktu', 'Dapat dipahami'], a: 0 },
+  { q: 'Laporan keuangan Laundry Kilat disusun setiap bulan sesuai asumsi \u2026', o: ['Periode akuntansi', 'Unit moneter', 'Biaya historis'], a: 0 },
+  { q: 'Menerima pinjaman bank menyebabkan \u2026', o: ['Harta dan utang bertambah', 'Harta dan modal bertambah', 'Modal bertambah, utang berkurang'], a: 0 },
+  { q: 'Gaji Oktober yang dibayar 1 November dicatat sebagai beban Oktober. Ini prinsip \u2026', o: ['Penandingan', 'Biaya historis', 'Materialitas'], a: 0 },
+  { q: 'Laporan yang menunjukkan laba atau rugi satu periode adalah \u2026', o: ['Laporan laba rugi', 'Neraca', 'Daftar aset'], a: 0 }
 ];
 
 /* ---------------- LEVEL & LENCANA ---------------- */
@@ -1434,16 +1434,16 @@ const LENCANA = [
   { id: 'b_m4', nama: 'Si Seimbang', ket: 'Menyelesaikan Misi 4', ikon: 'scale' },
   { id: 'b_tuntas', nama: 'Tuntas', ket: 'Nilai kuis mencapai KKTP', ikon: 'check' },
   { id: 'b_100', nama: 'Sempurna', ket: 'Nilai kuis 100', ikon: 'star' },
-  { id: 'b_g1', nama: 'Neraca Emas', ket: 'Skor Timbangan Seimbang ≥ 1.200', ikon: 'scale' },
-  { id: 'b_g2', nama: 'Tangan Kilat', ket: 'Skor Akun Kilat ≥ 150', ikon: 'bolt' },
-  { id: 'b_g3', nama: 'Detektif Ulung', ket: 'Skor Detektif Prinsip ≥ 1.800', ikon: 'search' },
-  { id: 'b_g4', nama: 'Juragan Jambi', ket: 'Modal akhir ≥ Rp21 juta di Juragan Seimbang', ikon: 'trophy' },
+  { id: 'b_g1', nama: 'Neraca Emas', ket: 'Skor Timbangan Seimbang \u2265 1.200', ikon: 'scale' },
+  { id: 'b_g2', nama: 'Tangan Kilat', ket: 'Skor Akun Kilat \u2265 150', ikon: 'bolt' },
+  { id: 'b_g3', nama: 'Detektif Ulung', ket: 'Skor Detektif Prinsip \u2265 1.800', ikon: 'search' },
+  { id: 'b_g4', nama: 'Juragan Batang Hari', ket: 'Modal akhir \u2265 Rp21 juta di Juragan Seimbang', ikon: 'trophy' },
   { id: 'b_ref', nama: 'Reflektif', ket: 'Mengirim refleksi belajar', ikon: 'pen' }
 ];
 
 ;
 /* =========================================================
-   SEIMBANG — LOGIKA BERSAMA (klien + server)
+   SEIMBANG \u2014 LOGIKA BERSAMA (klien + server)
    Perhitungan XP, level, lencana, persentase misi, pengaturan.
    Ditulis dengan sintaks ES5 sederhana agar aman di Apps Script.
    ========================================================= */
@@ -1452,7 +1452,7 @@ var GAMES = [
   { id: 'timbangan', nama: 'Timbangan Seimbang', target: 1200, badge: 'b_g1', ket: 'Tebak pengaruh transaksi pada Harta, Utang, dan Modal sebelum waktu habis.' },
   { id: 'akun', nama: 'Akun Kilat', target: 150, badge: 'b_g2', ket: 'Golongkan nama akun ke kelompok yang tepat dalam 60 detik.' },
   { id: 'detektif', nama: 'Detektif Prinsip', target: 1800, badge: 'b_g3', ket: 'Ungkap prinsip akuntansi dari petunjuk. Makin sedikit petunjuk, makin besar poin.' },
-  { id: 'juragan', nama: 'Juragan Seimbang', target: 21000, min: 15000, badge: 'b_g4', online: true, ket: 'Papan bisnis online bersama teman: beli usaha di Kota Jambi, tarik sewa, catat setiap transaksi, dan kejar modal terbesar.' }
+  { id: 'juragan', nama: 'Juragan Seimbang', target: 21000, min: 15000, badge: 'b_g4', online: true, ket: 'Papan bisnis online bersama teman: beli usaha di Kabupaten Batang Hari, tarik sewa, catat setiap transaksi, dan kejar modal terbesar.' }
 ];
 
 var SETTINGS_DEF = [
@@ -1483,7 +1483,7 @@ var SB = {
     return out;
   },
 
-  /* Pengaturan mentah (objek kunci→teks) menjadi objek bertipe */
+  /* Pengaturan mentah (objek kunci\u2192teks) menjadi objek bertipe */
   parseSettings: function (raw) {
     raw = raw || {};
     var s = {};
@@ -1581,7 +1581,7 @@ var SB = {
     };
   },
 
-  /* Angka bebas ("Rp38.000.000", "38 juta" tidak didukung) → bilangan bulat */
+  /* Angka bebas ("Rp38.000.000", "38 juta" tidak didukung) \u2192 bilangan bulat */
   parseAngka: function (v) {
     var s = String(v == null ? '' : v).replace(/[^0-9-]/g, '');
     if (!s || s === '-') return null;
@@ -1592,7 +1592,7 @@ var SB = {
 
 ;
 /* =========================================================
-   SEIMBANG — APLIKASI (inti: utilitas, server, state, kerangka)
+   SEIMBANG \u2014 APLIKASI (inti: utilitas, server, state, kerangka)
    ========================================================= */
 var App = (function () {
   'use strict';
@@ -1604,21 +1604,21 @@ var App = (function () {
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
-  var rp = function (n) { n = Math.round(Number(n) || 0); return (n < 0 ? '−' : '') + 'Rp' + Math.abs(n).toLocaleString('id-ID'); };
+  var rp = function (n) { n = Math.round(Number(n) || 0); return (n < 0 ? '\u2212' : '') + 'Rp' + Math.abs(n).toLocaleString('id-ID'); };
   var fmtN = function (n) { return Math.round(Number(n) || 0).toLocaleString('id-ID'); };
   var wait = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
   var shuffle = function (a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; };
   var firstName = function (n) { return String(n || '').trim().split(/\s+/)[0] || 'Kamu'; };
   var tgl = function (iso, jam) {
-    if (!iso) return '–';
-    var d = new Date(iso); if (isNaN(d)) return '–';
+    if (!iso) return '\u2013';
+    var d = new Date(iso); if (isNaN(d)) return '\u2013';
     var o = { day: 'numeric', month: 'short' }; if (jam !== false) { o.hour = '2-digit'; o.minute = '2-digit'; }
     return d.toLocaleString('id-ID', o);
   };
   var sejak = function (iso) {
     if (!iso) return 'belum pernah';
     var m = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
-    if (isNaN(m)) return '–';
+    if (isNaN(m)) return '\u2013';
     if (m < 2) return 'baru saja';
     if (m < 60) return m + ' menit lalu';
     if (m < 1440) return Math.round(m / 60) + ' jam lalu';
@@ -1706,7 +1706,7 @@ var App = (function () {
 
   function ring(pct, size) {
     var r = 18, c = 2 * Math.PI * r, off = c * (1 - Math.max(0, Math.min(100, pct)) / 100);
-    return '<svg class="ring ' + (pct >= 100 ? 'done' : '') + '" viewBox="0 0 46 46" style="width:' + (size || 46) + 'px;height:' + (size || 46) + 'px" role="img" aria-label="' + pct + ' persen"><circle class="tr" cx="23" cy="23" r="' + r + '"/><circle class="fg" cx="23" cy="23" r="' + r + '" stroke-dasharray="' + c.toFixed(1) + '" stroke-dashoffset="' + off.toFixed(1) + '"/><text x="23" y="23.5">' + (pct >= 100 ? '✓' : pct + '%') + '</text></svg>';
+    return '<svg class="ring ' + (pct >= 100 ? 'done' : '') + '" viewBox="0 0 46 46" style="width:' + (size || 46) + 'px;height:' + (size || 46) + 'px" role="img" aria-label="' + pct + ' persen"><circle class="tr" cx="23" cy="23" r="' + r + '"/><circle class="fg" cx="23" cy="23" r="' + r + '" stroke-dasharray="' + c.toFixed(1) + '" stroke-dashoffset="' + off.toFixed(1) + '"/><text x="23" y="23.5">' + (pct >= 100 ? '\u2713' : pct + '%') + '</text></svg>';
   }
 
   /* ---------- server ---------- */
@@ -1892,7 +1892,7 @@ var App = (function () {
   function guruStrip() {
     var s = S.settings || {};
     var nama = s.nama_guru || 'Dr. Herry Sofyandy P., M.Pd., Gr.';
-    return '<div class="guru-strip"><div class="wrap ' + (S.user && S.user.peran === 'guru' ? 'wide' : '') + '">' + icon('user') + '<span class="gs-k">Guru pengampu</span><b class="gs-n">' + esc(nama) + '</b>' + (s.sekolah ? '<span class="gs-s">· ' + esc(s.sekolah) + '</span>' : '') + '</div></div>';
+    return '<div class="guru-strip"><div class="wrap ' + (S.user && S.user.peran === 'guru' ? 'wide' : '') + '">' + icon('user') + '<span class="gs-k">Guru pengampu</span><b class="gs-n">' + esc(nama) + '</b>' + (s.sekolah ? '<span class="gs-s">\u00b7 ' + esc(s.sekolah) + '</span>' : '') + '</div></div>';
   }
   function topbar(extra, compact) {
     var st = S.stat, u = S.user;
@@ -1901,9 +1901,9 @@ var App = (function () {
     if (u && u.peran !== 'guru' && st) {
       right += '<button class="xpchip" data-act="go" data-v="saya" aria-label="XP kamu ' + st.xp + ', level ' + esc(st.levelNama) + '">' + icon('star') + '<span class="num" id="xpval">' + fmtN(st.xp) + '</span> XP</button>';
     }
-    if (u && !S.tamu) right += '<span class="syncdot ' + (S.sync === 'busy' ? 'busy' : S.sync === 'off' ? 'off' : '') + '" id="syncdot" title="' + (S.sync === 'off' ? 'Offline, progres disimpan di HP dan dikirim nanti' : S.sync === 'busy' ? 'Menyimpan…' : 'Tersimpan') + '"></span>';
+    if (u && !S.tamu) right += '<span class="syncdot ' + (S.sync === 'busy' ? 'busy' : S.sync === 'off' ? 'off' : '') + '" id="syncdot" title="' + (S.sync === 'off' ? 'Offline, progres disimpan di HP dan dikirim nanti' : S.sync === 'busy' ? 'Menyimpan\u2026' : 'Tersimpan') + '"></span>';
     right += '<button class="iconbtn" data-act="suara" aria-label="' + (S.pref.suara ? 'Matikan suara' : 'Nyalakan suara') + '" aria-pressed="' + (S.pref.suara ? 'true' : 'false') + '">' + icon(S.pref.suara ? 'volume' : 'mute') + '</button>';
-    var row = compact ? '' : '<div class="wrap brandrow ' + (u && u.peran === 'guru' ? 'wide' : '') + '"><button class="brand" data-act="go" data-v="' + (u ? home() : 'login') + '" aria-label="SEIMBANG, ke beranda">' + LOGO + '<span><b>SEIMBANG</b><small>Akuntansi · Kelas X SMK</small></span></button><span class="sp"></span>' + right + '</div>';
+    var row = compact ? '' : '<div class="wrap brandrow ' + (u && u.peran === 'guru' ? 'wide' : '') + '"><button class="brand" data-act="go" data-v="' + (u ? home() : 'login') + '" aria-label="SEIMBANG, ke beranda">' + LOGO + '<span><b>SEIMBANG</b><small>Akuntansi \u00b7 Kelas X SMK</small></span></button><span class="sp"></span>' + right + '</div>';
     return '<header class="topbar">' + row + guruStrip() + (extra || '') + '</header>';
   }
   function navbar() {
@@ -2075,12 +2075,12 @@ var App = (function () {
 
   function busy(btn, on, label) {
     if (!btn) return;
-    if (on) { btn.dataset.lbl = btn.innerHTML; btn.disabled = true; btn.innerHTML = '<span class="spin"></span> ' + (label || 'Memproses…'); }
+    if (on) { btn.dataset.lbl = btn.innerHTML; btn.disabled = true; btn.innerHTML = '<span class="spin"></span> ' + (label || 'Memproses\u2026'); }
     else { btn.disabled = false; if (btn.dataset.lbl) btn.innerHTML = btn.dataset.lbl; }
   }
 
   /* ---------- layar: memuat & login ---------- */
-  V.loading = function () { return '<div class="loading"><div class="spin"></div><span>Membuka buku besar…</span></div>'; };
+  V.loading = function () { return '<div class="loading"><div class="spin"></div><span>Membuka buku besar\u2026</span></div>'; };
 
   V.pasang = function () {
     return '<main class="wrap login"><div class="login-hero"><h1>SEIM<span>BANG</span></h1></div>' +
@@ -2089,9 +2089,9 @@ var App = (function () {
 
   V.login = function () {
     var s = S.settings;
-    var demo = DEMO ? '<div class="demo-box"><div class="row between"><b>' + icon('bolt') + ' Mode demo</b><span class="pill hi">Data di HP ini saja</span></div><p class="small" style="margin:0">Coba kedua peran tanpa mendaftar. Akun guru demo sudah berisi data contoh satu kelas.</p><div class="grid2"><button class="btn sec" data-act="demoLogin" data-u="siswa" data-p="siswa123">' + icon('user') + ' Masuk sebagai Siswa</button><button class="btn sec" data-act="demoLogin" data-u="guru" data-p="guru123">' + icon('people') + ' Masuk sebagai Guru</button></div><p class="tiny muted" style="margin:0">Siswa: <span class="cred">siswa</span> / <span class="cred">siswa123</span> · Guru: <span class="cred">guru</span> / <span class="cred">guru123</span></p></div>' : '';
+    var demo = DEMO ? '<div class="demo-box"><div class="row between"><b>' + icon('bolt') + ' Mode demo</b><span class="pill hi">Data di HP ini saja</span></div><p class="small" style="margin:0">Coba kedua peran tanpa mendaftar. Akun guru demo sudah berisi data contoh satu kelas.</p><div class="grid2"><button class="btn sec" data-act="demoLogin" data-u="siswa" data-p="siswa123">' + icon('user') + ' Masuk sebagai Siswa</button><button class="btn sec" data-act="demoLogin" data-u="guru" data-p="guru123">' + icon('people') + ' Masuk sebagai Guru</button></div><p class="tiny muted" style="margin:0">Siswa: <span class="cred">siswa</span> / <span class="cred">siswa123</span> \u00b7 Guru: <span class="cred">guru</span> / <span class="cred">guru123</span></p></div>' : '';
     return '<main class="wrap login"><div class="login-hero">' +
-      '<div class="eyebrow">' + esc(CP.mapel) + ' · ' + esc(CP.fase) + '</div>' +
+      '<div class="eyebrow">' + esc(CP.mapel) + ' \u00b7 ' + esc(CP.fase) + '</div>' +
       '<h1>SEIM<span>BANG</span></h1>' +
       '<p class="muted" style="max-width:44ch;margin:0">Belajar prinsip dan konsep dasar akuntansi lewat kasus usaha <b>Laundry Kilat</b> di Kota Jambi: misi, kuis, dan game.</p>' +
       '<div class="eqline"><b>Harta</b>=<b>Utang</b>+<b>Modal</b></div></div>' +
@@ -2124,7 +2124,7 @@ var App = (function () {
   }
   ACT['form:login'] = function (f) {
     var btn = f.querySelector('[type=submit]'), err = $('#lg-err');
-    busy(btn, true, 'Masuk…'); err.innerHTML = '';
+    busy(btn, true, 'Masuk\u2026'); err.innerHTML = '';
     Api.call('login', { username: f.username.value, password: f.password.value }).then(function (r) {
       Sound.play('ok'); setelahLogin(r);
     }, function (e) {
@@ -2133,7 +2133,7 @@ var App = (function () {
     });
   };
   ACT.demoLogin = function (el) {
-    busy(el, true, 'Masuk…');
+    busy(el, true, 'Masuk\u2026');
     Api.call('login', { username: el.dataset.u, password: el.dataset.p }).then(function (r) { Sound.play('ok'); setelahLogin(r); }, function (e) { busy(el, false); toast(e.message, 'bad'); });
   };
   ACT.tamu = function () {
@@ -2161,7 +2161,7 @@ var App = (function () {
     return '<main class="wrap page ' + (S.user ? '' : 'no-nav') + '">' +
       '<div class="row"><button class="btn sec sm" data-act="back">' + icon('chevL') + ' Kembali</button></div>' +
       '<div class="card stack"><div class="eyebrow">Tentang media</div><h1 style="font-size:1.6rem">SEIMBANG</h1>' +
-      '<p>Media pembelajaran interaktif untuk mata pelajaran <b>' + esc(CP.mapel) + '</b>, ' + esc(CP.fase) + '. Siswa belajar lewat satu kasus nyata yang terus berlanjut: usaha <b>Laundry Kilat</b> milik Raka di Kota Jambi.</p>' +
+      '<p>Media pembelajaran interaktif untuk mata pelajaran <b>' + esc(CP.mapel) + '</b>, ' + esc(CP.fase) + '. Siswa belajar lewat satu kasus nyata yang terus berlanjut: usaha <b>Laundry Kilat</b> milik Pak Herry di Kota Jambi.</p>' +
       '<div class="notice"><div>' + icon('target') + '</div><div><b>Elemen CP: ' + esc(CP.elemen) + '</b><p class="small" style="margin-top:4px">' + esc(CP.teks) + '</p><p class="small muted" style="margin-top:6px">' + esc(CP.cakupan) + '</p></div></div>' +
       '<h3>Tujuan pembelajaran</h3><ol style="margin:0;padding-left:1.2em">' + CP.tp.map(function (t, i) { return '<li>' + esc(t) + ' <span class="muted small">(Misi ' + (i + 1) + ')</span></li>'; }).join('') + '</ol></div>' +
       '<div class="card stack"><h2>Alur belajar</h2><div class="materi"><ol class="steps">' +
@@ -2176,7 +2176,7 @@ var App = (function () {
       '<div class="card stack"><h2>Sumber dan hak cipta</h2><ul class="small muted" style="margin:0;padding-left:1.2em">' +
       '<li>Materi disusun mengacu pada Capaian Pembelajaran Dasar-Dasar Akuntansi dan Keuangan Lembaga Fase E (Kurikulum Merdeka) dan buku teks Dasar-Dasar Akuntansi dan Keuangan Lembaga untuk SMK/MAK Kelas X (Kurikulum Merdeka).</li>' +
       '<li>Istilah standar mengacu pada Ikatan Akuntan Indonesia: Kerangka Konseptual Pelaporan Keuangan dan SAK EMKM.</li>' +
-      '<li>Kasus Laundry Kilat, tokoh Raka, soal, game, ikon, dan ilustrasi adalah karya asli pengembang. Efek suara dibuat langsung oleh peramban (Web Audio).</li>' +
+      '<li>Kasus Laundry Kilat, tokoh Pak Herry, soal, game, ikon, dan ilustrasi adalah karya asli pengembang. Efek suara dibuat langsung oleh peramban (Web Audio).</li>' +
       '<li>Huruf: Bricolage Grotesque, Atkinson Hyperlegible, dan IBM Plex Mono dari Google Fonts (lisensi SIL Open Font License).</li></ul>' +
       '<p class="small" style="margin:0">Pengembang: <b>' + esc(s.nama_guru) + '</b>' + (s.sekolah ? ', ' + esc(s.sekolah) : '') + '</p></div>' +
       (DEMO ? '<div class="card tint stack"><h3>Data demo</h3><p class="small muted" style="margin:0">Mode demo menyimpan semua data di peramban ini saja.</p><button class="btn sec" data-act="resetDemo">' + icon('refresh') + ' Atur ulang data demo</button></div>' : '') +
@@ -2229,7 +2229,7 @@ var App = (function () {
 
 ;
 /* =========================================================
-   SEIMBANG — LAYAR SISWA: beranda, misi, aktivitas, profil
+   SEIMBANG \u2014 LAYAR SISWA: beranda, misi, aktivitas, profil
    ========================================================= */
 (function (A) {
   'use strict';
@@ -2271,10 +2271,10 @@ var App = (function () {
     html += fokusBanner();
     html += '<section class="hello"><div><div class="eyebrow">' + esc(u.kelas || (S.tamu ? 'Tamu' : 'Siswa')) + '</div><h1>Halo, ' + esc(A.firstName(u.nama)) + '!</h1><p class="muted" style="margin:4px 0 0">' + (lanjut ? 'Yuk lanjutkan belajarmu hari ini.' : 'Semua misi yang dibuka sudah selesai. Hebat!') + '</p></div>' + A.ring(Math.round((st.misiSelesai / MISI.length) * 100), 64) + '</section>';
     if (s.pengumuman) html += '<div class="notice">' + icon('megaphone') + '<div><b class="small">Pengumuman dari ' + esc(s.nama_guru) + '</b><p>' + esc(s.pengumuman) + '</p></div></div>';
-    html += '<section class="ledger" aria-label="Buku saldo XP"><div class="ledger-head"><div><div class="eyebrow">Buku saldo XP</div><div class="ledger-saldo">' + fmtN(st.xp) + '<small>XP</small></div></div><span class="pill hi">' + icon('star') + ' Level ' + st.level + ' · ' + esc(st.levelNama) + '</span></div>' +
+    html += '<section class="ledger" aria-label="Buku saldo XP"><div class="ledger-head"><div><div class="eyebrow">Buku saldo XP</div><div class="ledger-saldo">' + fmtN(st.xp) + '<small>XP</small></div></div><span class="pill hi">' + icon('star') + ' Level ' + st.level + ' \u00b7 ' + esc(st.levelNama) + '</span></div>' +
       '<div style="padding:0 16px 12px"><div class="bar xp" role="progressbar" aria-valuenow="' + pctNext + '" aria-valuemin="0" aria-valuemax="100"><i style="width:' + pctNext + '%"></i></div><div class="tiny muted" style="margin-top:6px">' + (st.xpNext ? fmtN(st.xpNext - st.xp) + ' XP lagi menuju <b>' + esc(st.nextNama) + '</b>' : 'Level tertinggi tercapai') + '</div></div>' +
       '<div class="ledger-rows">' + [['Materi dibaca', r.materi], ['Latihan & aktivitas', r.latihan], ['Kuis', r.kuis], ['Game', r.game], ['Refleksi', r.refleksi]].map(function (x) { return '<div class="ledger-row"><span>' + x[0] + '</span><span class="num">' + fmtN(x[1]) + '</span></div>'; }).join('') + '</div></section>';
-    if (lanjut) html += '<button class="card row nowrap" style="text-align:left;width:100%" data-act="go" data-v="misiBaca" data-m="' + lanjut.m.id + '" data-b="' + lanjut.b + '"><span class="misi-no">' + lanjut.m.no + '</span><span style="flex:1;min-width:0"><span class="eyebrow">Lanjutkan · Misi ' + lanjut.m.no + '</span><b style="display:block;font-family:var(--f-display);font-size:1.05rem">' + esc(lanjut.label) + '</b></span>' + icon('chevR') + '</button>';
+    if (lanjut) html += '<button class="card row nowrap" style="text-align:left;width:100%" data-act="go" data-v="misiBaca" data-m="' + lanjut.m.id + '" data-b="' + lanjut.b + '"><span class="misi-no">' + lanjut.m.no + '</span><span style="flex:1;min-width:0"><span class="eyebrow">Lanjutkan \u00b7 Misi ' + lanjut.m.no + '</span><b style="display:block;font-family:var(--f-display);font-size:1.05rem">' + esc(lanjut.label) + '</b></span>' + icon('chevR') + '</button>';
     html += '<div class="sec-title"><h2>Misi belajar</h2><button class="btn ghost sm" data-act="go" data-v="misi">Lihat semua</button></div>' + misiList();
     html += '<div class="quick">' +
       '<button data-act="go" data-v="kuis">' + icon('quiz') + '<b>Kuis</b><span class="small muted">' + esc(kuisTxt) + '</span></button>' +
@@ -2308,7 +2308,7 @@ var App = (function () {
   A.badgeGrid = badgeGrid;
 
   V.misi = function () {
-    return '<main class="wrap page"><div><div class="eyebrow">' + esc(CP.elemen) + '</div><h1 style="font-size:1.6rem;margin-top:4px">Misi belajar</h1><p class="muted" style="margin-top:6px">Ikuti kisah Raka membangun Laundry Kilat. Setiap misi berisi bacaan singkat, cek pemahaman, dan satu aktivitas.</p></div>' + fokusBanner() + misiList() +
+    return '<main class="wrap page"><div><div class="eyebrow">' + esc(CP.elemen) + '</div><h1 style="font-size:1.6rem;margin-top:4px">Misi belajar</h1><p class="muted" style="margin-top:6px">Ikuti kisah Pak Herry membangun Laundry Kilat. Setiap misi berisi bacaan singkat, cek pemahaman, dan satu aktivitas.</p></div>' + fokusBanner() + misiList() +
       '<button class="card row nowrap" style="text-align:left;width:100%" data-act="go" data-v="kamus"><span class="misi-no">' + icon('book') + '</span><span style="flex:1;min-width:0"><b style="font-family:var(--f-display);font-size:1.05rem;display:block">Kamus akuntansi</b><span class="small muted">' + ISTILAH.length + ' istilah penting dengan penjelasan singkat</span></span>' + icon('chevR') + '</button>' +
       '<div class="card tint stack"><h3>Tujuan pembelajaran</h3><ol style="margin:0;padding-left:1.2em" class="small">' + CP.tp.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') + '</ol></div></main>';
   };
@@ -2329,7 +2329,7 @@ var App = (function () {
     var dots = '<div class="steps-dots" role="tablist" aria-label="Langkah misi">' + m.bagian.map(function (x, i) {
       return '<button role="tab" aria-selected="' + (i === b) + '" aria-label="Bagian ' + (i + 1) + ': ' + esc(x.judul) + '" class="' + (pr.baca.indexOf(i) >= 0 ? 'done ' : '') + (i === b ? 'cur' : '') + '" data-act="keBagian" data-b="' + i + '">' + (i + 1) + '</button>';
     }).join('') + '<button role="tab" aria-selected="' + (b === n) + '" class="akt ' + (pr.akt && pr.akt.selesai ? 'done ' : '') + (b === n ? 'cur' : '') + '" data-act="keBagian" data-b="' + n + '">' + icon('bolt') + ' Aktivitas</button></div>';
-    var head = '<div class="row between"><button class="btn sec sm" data-act="go" data-v="misi">' + icon('chevL') + ' Misi</button><span class="pill info">Misi ' + m.no + ' · TP ' + (m.tp + 1) + '</span></div>' +
+    var head = '<div class="row between"><button class="btn sec sm" data-act="go" data-v="misi">' + icon('chevL') + ' Misi</button><span class="pill info">Misi ' + m.no + ' \u00b7 TP ' + (m.tp + 1) + '</span></div>' +
       '<div><h1 style="font-size:1.35rem">' + esc(m.judul) + '</h1></div>' + dots;
     if (b >= n) return '<main class="wrap page">' + head + '<div id="akt-root"></div></main>';
     var bg = m.bagian[b];
@@ -2434,13 +2434,13 @@ var App = (function () {
     draw: function () {
       var r = Akt.root(); if (!r || !AK) return;
       var a = AK.a, pr = prog(AK.m.id);
-      var head = '<div class="akt-head"><div class="row between"><span class="eyebrow">Aktivitas Misi ' + AK.m.no + '</span>' + (pr.akt && pr.akt.selesai && !AK.selesai ? '<span class="pill ok">' + icon('check') + ' Pernah selesai · skor ' + Math.round(pr.akt.skor * 100) + '</span>' : '') + '</div><h2>' + esc(a.judul) + '</h2><p class="muted" style="margin:0">' + esc(a.petunjuk) + '</p></div>';
+      var head = '<div class="akt-head"><div class="row between"><span class="eyebrow">Aktivitas Misi ' + AK.m.no + '</span>' + (pr.akt && pr.akt.selesai && !AK.selesai ? '<span class="pill ok">' + icon('check') + ' Pernah selesai \u00b7 skor ' + Math.round(pr.akt.skor * 100) + '</span>' : '') + '</div><h2>' + esc(a.judul) + '</h2><p class="muted" style="margin:0">' + esc(a.petunjuk) + '</p></div>';
       r.innerHTML = '<article class="card stack lg">' + head + (AK.selesai ? Akt.hasil() : Akt[AK.tipe]()) + '</article>' + (AK.tipe === 'timbangan' && !AK.selesai ? Akt.panelTimbangan() : '');
       if (AK.tipe === 'timbangan') Akt.setScale(AK.tampil, true);
     },
     urut: function () {
       var a = AK.a;
-      var slots = a.item.map(function (t, i) { return i < AK.taruh.length ? '<li>' + esc(a.item[AK.taruh[i]]) + '</li>' : '<li class="slot">' + (i === AK.taruh.length ? 'Kegiatan berikutnya…' : '&nbsp;') + '</li>'; }).join('');
+      var slots = a.item.map(function (t, i) { return i < AK.taruh.length ? '<li>' + esc(a.item[AK.taruh[i]]) + '</li>' : '<li class="slot">' + (i === AK.taruh.length ? 'Kegiatan berikutnya\u2026' : '&nbsp;') + '</li>'; }).join('');
       return '<ol class="order-list" aria-label="Urutan yang sudah disusun">' + slots + '</ol><div><div class="eyebrow" style="margin-bottom:8px">Pilih kegiatan berikutnya</div><div class="chips">' +
         AK.sisa.map(function (i) { return '<button class="chipbtn" data-act="urutPilih" data-i="' + i + '">' + esc(a.item[i]) + '</button>'; }).join('') + '</div></div>' +
         '<div class="row between small muted"><span>Salah langkah: <b class="num">' + AK.salah + '</b></span><span>' + AK.taruh.length + '/' + a.item.length + '</span></div>';
@@ -2483,7 +2483,7 @@ var App = (function () {
           '<button class="btn block" data-act="aktLanjut">' + (AK.i + 1 < TRX_LAUNDRY.length ? 'Transaksi berikutnya' : 'Lihat posisi keuangan akhir') + ' ' + icon('chevR') + '</button>';
       } else fb = '<button class="btn block" data-act="timbangCek" ' + (AK.pred.indexOf(null) >= 0 ? 'disabled' : '') + '>' + icon('scale') + ' Catat & lihat timbangan</button>';
       return '<div class="row between small"><span class="muted">Transaksi ' + (AK.i + 1) + ' dari ' + TRX_LAUNDRY.length + '</span><span class="pill ok">' + icon('check') + ' ' + AK.benar + '</span></div>' +
-        '<div class="nota"><div class="nota-head"><span>Laundry Kilat · Nota</span><span>' + esc(t.tgl) + ' 2026</span></div><div class="nota-body">' + esc(t.t) + '</div>' + (AK.cek ? '<span class="nota-tag">' + esc(t.ket) + '</span>' : '') + '</div>' +
+        '<div class="nota"><div class="nota-head"><span>Laundry Kilat \u00b7 Nota</span><span>' + esc(t.tgl) + ' 2026</span></div><div class="nota-body">' + esc(t.t) + '</div>' + (AK.cek ? '<span class="nota-tag">' + esc(t.ket) + '</span>' : '') + '</div>' +
         '<div class="predict"><div class="eyebrow">Tebak dulu: total masing-masing naik, tetap, atau turun?</div>' + rows + '</div>' + fb;
     },
     panelTimbangan: function () {
@@ -2634,7 +2634,7 @@ var App = (function () {
       '</svg></div>';
   }
   function singkat(n) {
-    var a = Math.abs(n), s = n < 0 ? '−' : '';
+    var a = Math.abs(n), s = n < 0 ? '\u2212' : '';
     if (a >= 1e6) return s + 'Rp' + (a / 1e6).toLocaleString('id-ID', { maximumFractionDigits: 1 }) + ' jt';
     if (a >= 1e3) return s + 'Rp' + (a / 1e3).toLocaleString('id-ID', { maximumFractionDigits: 0 }) + ' rb';
     return s + 'Rp' + a;
@@ -2690,7 +2690,7 @@ var App = (function () {
   /* ---------- profil ---------- */
   V.saya = function () {
     var st = S.stat || A.hitungStat(), u = S.user, p = S.pref;
-    var html = '<main class="wrap page"><section class="card row nowrap" style="gap:14px"><div class="misi-no" style="width:56px;height:56px;font-size:1.5rem">' + esc((u.nama || '?').charAt(0).toUpperCase()) + '</div><div style="min-width:0;flex:1"><h1 style="font-size:1.3rem">' + esc(u.nama) + '</h1><p class="muted small" style="margin:2px 0 0">' + (S.tamu ? 'Tamu' : esc(u.kelas || '') + ' · <span class="num">' + esc(u.username) + '</span>') + '</p></div><span class="pill hi">' + icon('star') + ' ' + fmtN(st.xp) + '</span></section>';
+    var html = '<main class="wrap page"><section class="card row nowrap" style="gap:14px"><div class="misi-no" style="width:56px;height:56px;font-size:1.5rem">' + esc((u.nama || '?').charAt(0).toUpperCase()) + '</div><div style="min-width:0;flex:1"><h1 style="font-size:1.3rem">' + esc(u.nama) + '</h1><p class="muted small" style="margin:2px 0 0">' + (S.tamu ? 'Tamu' : esc(u.kelas || '') + ' \u00b7 <span class="num">' + esc(u.username) + '</span>') + '</p></div><span class="pill hi">' + icon('star') + ' ' + fmtN(st.xp) + '</span></section>';
     if (S.sandiBawaan && !S.tamu) html += '<div class="notice bad">' + icon('key') + '<div><p class="small"><b>Kata sandimu masih sandi awal dari guru.</b> Ganti agar akunmu aman.</p><button class="btn sm sec" data-act="gantiSandiBuka" style="margin-top:8px">Ganti kata sandi</button></div></div>';
     html += '<div class="sec-title"><h2>Lencana</h2><span class="muted small">' + st.lencana.length + ' dari ' + LENCANA.length + '</span></div>' + badgeGrid(st);
     html += '<div class="quick">' + (!S.tamu ? '<button data-act="go" data-v="refleksi">' + A.icon('pen') + '<b>Refleksi</b><span class="small muted">Tulis dan baca balasan guru</span></button>' : '') + (!S.tamu && S.settings.peringkat ? '<button data-act="go" data-v="peringkat">' + icon('trophy') + '<b>Peringkat</b><span class="small muted">Papan kelas</span></button>' : '') + '<button data-act="go" data-v="tentang">' + icon('info') + '<b>Tentang</b><span class="small muted">CP, TP, petunjuk</span></button>' + (!S.tamu ? '<button data-act="gantiSandiBuka">' + icon('key') + '<b>Kata sandi</b><span class="small muted">Ganti sandi</span></button>' : '') + '</div>';
@@ -2720,7 +2720,7 @@ var App = (function () {
   ACT['form:gantiSandi'] = function (f) {
     var err = A.$('#gs-err');
     if (f.baru.value !== f.ulang.value) { err.innerHTML = '<div class="notice bad">' + icon('x') + '<p>Kata sandi baru dan ulangannya tidak sama.</p></div>'; return; }
-    var btn = f.querySelector('[type=submit]'); A.busy(btn, true, 'Menyimpan…');
+    var btn = f.querySelector('[type=submit]'); A.busy(btn, true, 'Menyimpan\u2026');
     A.Api.call('gantiSandi', { lama: f.lama.value, baru: f.baru.value }).then(function () {
       A.closeModal(); S.sandiBawaan = false; if (S.dash && S.dash.guru) S.dash.guru.sandiBawaan = false;
       A.toast('Kata sandi berhasil diganti'); A.render();
@@ -2748,7 +2748,7 @@ var App = (function () {
   ACT.mood = function (el) { moodPilih = Number(el.dataset.n); A.$$('.moods button').forEach(function (b) { b.setAttribute('aria-pressed', b === el ? 'true' : 'false'); }); A.Sound.play('tap'); };
   ACT['form:refleksi'] = function (f) {
     if (!moodPilih) { A.toast('Pilih dulu perasaanmu.', 'bad', 'info'); return; }
-    var btn = f.querySelector('[type=submit]'); A.busy(btn, true, 'Mengirim…');
+    var btn = f.querySelector('[type=submit]'); A.busy(btn, true, 'Mengirim\u2026');
     A.Api.call('kirimRefleksi', { perasaan: moodPilih, paham: f.paham.value, bingung: f.bingung.value, pertanyaan: f.pertanyaan.value }).then(function (r) {
       S.refleksi = r.refleksi; A.updateStat(r.stat); moodPilih = 0;
       A.toast('Refleksi terkirim ke guru'); A.render();
@@ -2771,7 +2771,7 @@ var App = (function () {
 
 ;
 /* =========================================================
-   SEIMBANG — KUIS (dinilai di server)
+   SEIMBANG \u2014 KUIS (dinilai di server)
    ========================================================= */
 (function (A) {
   'use strict';
@@ -2809,7 +2809,7 @@ var App = (function () {
   function fakta(ic, label, val) { return '<div class="kpi"><span>' + icon(ic) + ' ' + label + '</span><b>' + esc(val) + '</b></div>'; }
 
   ACT.kuisMulai = function (el) {
-    A.busy(el, true, 'Menyiapkan soal…');
+    A.busy(el, true, 'Menyiapkan soal\u2026');
     A.Api.call('kuisMulai').then(function (r) {
       QZ = { token: r.token, soal: r.soal, end: Date.now() + r.durasi * 60000, durasi: r.durasi, jawab: {}, flag: {}, i: 0, percobaan: r.percobaan };
       simpanDraft(); A.Sound.play('ok');
@@ -2831,7 +2831,7 @@ var App = (function () {
       }).join('') + '</div>';
     }
     return '<div class="quiz-top"><div class="wrap"><button class="iconbtn" data-act="qDaftar" aria-label="Daftar soal">' + icon('grid') + '</button><div style="flex:1;min-width:0"><b class="num">Soal ' + (QZ.i + 1) + '/' + n + '</b><div class="bar" style="height:6px;margin-top:4px"><i style="width:' + Math.round(answered / n * 100) + '%"></i></div></div><span class="timer" id="qtimer" role="timer" aria-live="off">' + icon('clock') + '<span>--:--</span></span></div></div>' +
-      '<main class="wrap page no-nav"><section class="card qcard"><div class="row between"><span class="pill info">Misi ' + q.m.slice(1) + ' · TP ' + q.m.slice(1) + '</span><button class="btn ghost sm" data-act="qFlag" aria-pressed="' + (!!QZ.flag[q.id]) + '" style="color:' + (QZ.flag[q.id] ? 'var(--warn)' : 'var(--ink-3)') + '">' + icon('flag') + (QZ.flag[q.id] ? ' Ditandai ragu' : ' Tandai ragu') + '</button></div>' +
+      '<main class="wrap page no-nav"><section class="card qcard"><div class="row between"><span class="pill info">Misi ' + q.m.slice(1) + ' \u00b7 TP ' + q.m.slice(1) + '</span><button class="btn ghost sm" data-act="qFlag" aria-pressed="' + (!!QZ.flag[q.id]) + '" style="color:' + (QZ.flag[q.id] ? 'var(--warn)' : 'var(--ink-3)') + '">' + icon('flag') + (QZ.flag[q.id] ? ' Ditandai ragu' : ' Tandai ragu') + '</button></div>' +
       '<div class="qtext">' + esc(q.q) + '</div>' + body + '</section>' +
       '<div class="pager"><button class="btn sec" data-act="qNav" data-d="-1" ' + (QZ.i === 0 ? 'disabled' : '') + '>' + icon('chevL') + ' Sebelumnya</button>' +
       (QZ.i === n - 1 ? '<button class="btn hi" data-act="qSelesai">' + icon('send') + ' Kirim jawaban</button>' : '<button class="btn" data-act="qNav" data-d="1">Berikutnya ' + icon('chevR') + '</button>') + '</div></main>';
@@ -2886,7 +2886,7 @@ var App = (function () {
 
   function kirim(otomatis) {
     clearInterval(tick);
-    var m = A.modal('<div class="stack" style="justify-items:center;text-align:center"><div class="spin"></div><b>' + (otomatis ? 'Waktu habis. Mengirim jawaban…' : 'Mengirim jawaban…') + '</b></div>', { lock: true });
+    var m = A.modal('<div class="stack" style="justify-items:center;text-align:center"><div class="spin"></div><b>' + (otomatis ? 'Waktu habis. Mengirim jawaban\u2026' : 'Mengirim jawaban\u2026') + '</b></div>', { lock: true });
     A.Api.call('kuisKirim', { kuis: QZ.token, jawaban: QZ.jawab }).then(function (r) {
       A.closeModal();
       A.store.del(draftKey());
@@ -2907,11 +2907,11 @@ var App = (function () {
     var col = ok ? 'var(--plus)' : r.nilai >= 50 ? 'var(--warn)' : 'var(--minus)';
     var tp = MISI.map(function (m) {
       var x = r.perMisi[m.id] || { b: 0, n: 0 }; var pc = x.n ? Math.round(x.b / x.n * 100) : 0;
-      return '<div class="tp-bar"><div class="row between"><span><b>TP ' + (m.tp + 1) + '</b> · ' + esc(m.judul) + '</span><span class="num">' + x.b + '/' + x.n + '</span></div><div class="bar ' + (pc >= 70 ? 'ok' : '') + '"><i style="width:' + pc + '%;' + (pc < 70 ? 'background:var(--warn)' : '') + '"></i></div>' + (x.n && pc < 70 ? '<button class="btn ghost sm" style="justify-self:start;padding-left:0" data-act="go" data-v="misiBaca" data-m="' + m.id + '" data-b="0">' + icon('book') + ' Pelajari ulang Misi ' + m.no + '</button>' : '') + '</div>';
+      return '<div class="tp-bar"><div class="row between"><span><b>TP ' + (m.tp + 1) + '</b> \u00b7 ' + esc(m.judul) + '</span><span class="num">' + x.b + '/' + x.n + '</span></div><div class="bar ' + (pc >= 70 ? 'ok' : '') + '"><i style="width:' + pc + '%;' + (pc < 70 ? 'background:var(--warn)' : '') + '"></i></div>' + (x.n && pc < 70 ? '<button class="btn ghost sm" style="justify-self:start;padding-left:0" data-act="go" data-v="misiBaca" data-m="' + m.id + '" data-b="0">' + icon('book') + ' Pelajari ulang Misi ' + m.no + '</button>' : '') + '</div>';
     }).join('');
     var k = S.kuis || {};
     return '<main class="wrap page"><section class="card stack" style="justify-items:center;text-align:center;overflow:hidden">' +
-      '<div class="eyebrow">Hasil kuis · percobaan ' + (k.percobaan || 1) + '</div>' +
+      '<div class="eyebrow">Hasil kuis \u00b7 percobaan ' + (k.percobaan || 1) + '</div>' +
       '<svg class="score-ring" viewBox="0 0 150 150" role="img" aria-label="Nilai ' + r.nilai + '"><circle class="tr" cx="75" cy="75" r="62"/><circle class="fg" id="sr-fg" cx="75" cy="75" r="62" stroke="' + col + '" stroke-dasharray="' + c.toFixed(1) + '" stroke-dashoffset="' + c.toFixed(1) + '" data-off="' + off.toFixed(1) + '"/><text x="75" y="76">' + r.nilai + '</text></svg>' +
       '<span class="stamp ' + (ok ? 'ok' : 'bad') + '">' + (ok ? 'Tuntas' : 'Belum tuntas') + '</span>' +
       '<p style="margin:6px 0 0">Benar <b>' + r.benar + '</b> dari ' + r.jumlah + ' soal. KKTP ' + r.kktp + '.</p>' +
@@ -2930,7 +2930,7 @@ var App = (function () {
     return list.map(function (p, i) {
       var opts;
       if (p.t === 'angka') {
-        opts = '<div class="fb ' + (p.benar ? 'ok' : 'bad') + '">' + icon(p.benar ? 'check' : 'x') + '<span>Jawabanmu: <b class="num">' + (p.jawab === '' ? '(kosong)' : A.rp(SB.parseAngka(p.jawab))) + '</b>' + (p.benar ? '' : ' · Kunci: <b class="num">' + A.rp(p.kunci) + '</b>') + '</span></div>';
+        opts = '<div class="fb ' + (p.benar ? 'ok' : 'bad') + '">' + icon(p.benar ? 'check' : 'x') + '<span>Jawabanmu: <b class="num">' + (p.jawab === '' ? '(kosong)' : A.rp(SB.parseAngka(p.jawab))) + '</b>' + (p.benar ? '' : ' \u00b7 Kunci: <b class="num">' + A.rp(p.kunci) + '</b>') + '</span></div>';
       } else {
         opts = '<div class="qopts">' + p.o.map(function (o, j) {
           var cls = j === p.kunci ? 'right' : (j === p.jawab ? 'wrong' : '');
@@ -2944,7 +2944,7 @@ var App = (function () {
 
 ;
 /* =========================================================
-   SEIMBANG — TIGA GAME
+   SEIMBANG \u2014 TIGA GAME
    ========================================================= */
 (function (A) {
   'use strict';
@@ -2962,9 +2962,9 @@ var App = (function () {
     html += '<div class="stack">' + urut.map(function (g) {
       var b = best(g.id), got = b >= g.target, L = LENCANA.filter(function (x) { return x.id === g.badge; })[0];
       var base = g.min || 0, pct = Math.max(0, Math.min(100, Math.round((b - base) / (g.target - base) * 100)));
-      var skor = g.online ? (b ? 'Modal terbaik <b class="num">Rp' + (b / 1000).toLocaleString('id-ID', { maximumFractionDigits: 1 }) + ' jt</b>' : 'Belum pernah main') + '<span class="muted">· Lencana di Rp' + (g.target / 1000) + ' jt</span>'
-        : 'Skor terbaik <b class="num">' + fmtN(b) + '</b><span class="muted">· Target lencana <span class="num">' + fmtN(g.target) + '</span></span>';
-      return '<section class="card game-card ' + (g.online ? 'featured' : '') + '"><div class="game-art">' + icon(ART[g.id]) + '</div><div class="stack" style="gap:8px;min-width:0"><div class="row between"><h2>' + esc(g.nama) + '</h2>' + (g.online ? '<span class="pill info">' + icon('people') + ' Online 2–4 pemain</span>' : '') + (got ? '<span class="pill hi">' + icon('trophy') + ' ' + esc(L.nama) + '</span>' : '') + '</div><p class="muted small" style="margin:0">' + esc(g.ket) + '</p>' +
+      var skor = g.online ? (b ? 'Modal terbaik <b class="num">Rp' + (b / 1000).toLocaleString('id-ID', { maximumFractionDigits: 1 }) + ' jt</b>' : 'Belum pernah main') + '<span class="muted">\u00b7 Lencana di Rp' + (g.target / 1000) + ' jt</span>'
+        : 'Skor terbaik <b class="num">' + fmtN(b) + '</b><span class="muted">\u00b7 Target lencana <span class="num">' + fmtN(g.target) + '</span></span>';
+      return '<section class="card game-card ' + (g.online ? 'featured' : '') + '"><div class="game-art">' + icon(ART[g.id]) + '</div><div class="stack" style="gap:8px;min-width:0"><div class="row between"><h2>' + esc(g.nama) + '</h2>' + (g.online ? '<span class="pill info">' + icon('people') + ' Online 2\u20134 pemain</span>' : '') + (got ? '<span class="pill hi">' + icon('trophy') + ' ' + esc(L.nama) + '</span>' : '') + '</div><p class="muted small" style="margin:0">' + esc(g.ket) + '</p>' +
         '<div class="row small" style="gap:6px">' + skor + '</div><div class="bar xp"><i style="width:' + pct + '%"></i></div>' +
         (g.online ? '<button class="btn hi" data-act="go" data-v="juragan">' + icon('play') + ' Main online</button>' : '<button class="btn" data-act="gameBuka" data-g="' + g.id + '">' + icon('play') + ' Main</button>') + '</div></section>';
     }).join('') + '</div></main>';
@@ -2996,7 +2996,7 @@ var App = (function () {
 
   var ATURAN = {
     timbangan: ['10 transaksi muncul satu per satu, masing-masing 20 detik.', 'Tentukan apakah total Harta, Utang, dan Modal naik, tetap, atau turun.', 'Ketiganya tepat: 100 poin + bonus kecepatan sampai 50 poin.'],
-    akun: ['Waktumu 60 detik.', 'Ketuk kelompok yang tepat untuk setiap nama akun: Harta, Utang, Modal, Pendapatan, atau Beban.', 'Benar +10, salah −5. Setiap 5 jawaban benar beruntun: bonus kombo +5.'],
+    akun: ['Waktumu 60 detik.', 'Ketuk kelompok yang tepat untuk setiap nama akun: Harta, Utang, Modal, Pendapatan, atau Beban.', 'Benar +10, salah \u22125. Setiap 5 jawaban benar beruntun: bonus kombo +5.'],
     detektif: ['8 kasus misteri di Laundry Kilat.', 'Tebak asumsi atau prinsip akuntansi dari petunjuk yang muncul.', 'Tebak di petunjuk pertama 300 poin, kedua 200, ketiga 100. Tebakan salah mengurangi poin.']
   };
   function intro(g) {
@@ -3097,7 +3097,7 @@ var App = (function () {
   GM.akun = {
     mulai: function () { G.skor = 0; G.combo = 0; G.salah = []; G.pool = A.shuffle(GAME_AKUN); G.cur = G.pool.pop(); G.t0 = Date.now(); G.durasi = 60000; G.n = 0; },
     view: function () {
-      return '<div class="hud"><span class="pill info">' + icon('clock') + ' <span class="num" id="aksisa">60</span> dtk</span><span class="combo" id="akcombo">' + (G.combo >= 2 ? 'Kombo ×' + G.combo : '') + '</span><span class="pill hi">' + icon('star') + ' <span class="num" id="gskor">' + G.skor + '</span></span></div>' +
+      return '<div class="hud"><span class="pill info">' + icon('clock') + ' <span class="num" id="aksisa">60</span> dtk</span><span class="combo" id="akcombo">' + (G.combo >= 2 ? 'Kombo \u00d7' + G.combo : '') + '</span><span class="pill hi">' + icon('star') + ' <span class="num" id="gskor">' + G.skor + '</span></span></div>' +
         '<div class="timebar" aria-hidden="true"><i id="aktb" style="width:100%"></i></div>' +
         '<div class="akun-card" id="akcard" aria-live="polite">' + esc(G.cur[0]) + '</div>' +
         '<div class="akfb" id="akfb" aria-live="polite"><span class="muted small">Golongkan nama akun ke kelompoknya.</span></div>' +
@@ -3125,8 +3125,8 @@ var App = (function () {
     } else {
       G.combo = 0; G.skor = Math.max(0, G.skor - 5); A.Sound.play('bad');
       var why = it[2] || (it[0] + ' termasuk kelompok ' + KATEGORI_AKUN[it[1]] + '.');
-      if (!G.salah.some(function (s) { return s.t === it[0]; })) G.salah.push({ t: it[0] + ' → ' + KATEGORI_AKUN[it[1]], why: why });
-      A.floaty(card, '−5', true);
+      if (!G.salah.some(function (s) { return s.t === it[0]; })) G.salah.push({ t: it[0] + ' \u2192 ' + KATEGORI_AKUN[it[1]], why: why });
+      A.floaty(card, '\u22125', true);
       fb('bad', icon('bulb') + ' <span><b>' + esc(it[0]) + ' = ' + esc(KATEGORI_AKUN[it[1]]) + '.</b> ' + (it[2] ? esc(it[2]) : '') + '</span>');
     }
     if (!G.pool.length) G.pool = A.shuffle(GAME_AKUN);
@@ -3134,7 +3134,7 @@ var App = (function () {
     card.textContent = G.cur[0];
     card.classList.remove('ok', 'bad'); void card.offsetWidth; card.classList.add(ok ? 'ok' : 'bad');
     A.$('#gskor').textContent = G.skor;
-    A.$('#akcombo').textContent = G.combo >= 2 ? 'Kombo ×' + G.combo : '';
+    A.$('#akcombo').textContent = G.combo >= 2 ? 'Kombo \u00d7' + G.combo : '';
   };
 
   function fb(kind, html) { var f = A.$('#akfb'); if (!f) return; f.className = 'akfb ' + kind; f.innerHTML = html; }
@@ -3155,7 +3155,7 @@ var App = (function () {
         return '<button class="qopt ' + cls + '" data-act="dtTebak" data-o="' + j + '" ' + (G.beres || G.coret.indexOf(o) >= 0 ? 'disabled' : '') + '><span class="k">' + 'ABCD'[j] + '</span><span>' + esc(o) + '</span></button>';
       }).join('') + '</div>';
       var bawah = G.beres ? '<div class="fb ok">' + icon('check') + '<span><b>Kasus terpecahkan: ' + esc(it.a) + '. +' + G.dapat + ' poin.</b></span></div><button class="btn block" data-act="dtLanjut">' + (G.i + 1 < G.q.length ? 'Kasus berikutnya' : 'Lihat skor') + ' ' + icon('chevR') + '</button>'
-        : '<button class="btn sec block" data-act="dtPetunjuk" ' + (G.buka >= it.k.length ? 'disabled' : '') + '>' + icon('bulb') + ' Minta petunjuk berikutnya (−100)</button>';
+        : '<button class="btn sec block" data-act="dtPetunjuk" ' + (G.buka >= it.k.length ? 'disabled' : '') + '>' + icon('bulb') + ' Minta petunjuk berikutnya (\u2212100)</button>';
       return '<div class="hud"><span class="pill info">Kasus ' + (G.i + 1) + '/' + G.q.length + '</span><span class="pill">' + icon('target') + ' Poin kasus <b class="num">&nbsp;' + (G.beres ? G.dapat : G.potensi) + '</b></span><span class="pill hi">' + icon('star') + ' <span class="num" id="gskor">' + fmtN(G.skor) + '</span></span></div>' +
         '<section class="card stack"><div class="box-k">' + icon('search') + ' Petunjuk</div>' + clues + '</section>' +
         '<section class="card stack"><div class="eyebrow">Asumsi atau prinsip apa ini?</div>' + opts + bawah + '</section>';
@@ -3179,7 +3179,7 @@ var App = (function () {
 
 ;
 /* =========================================================
-   SEIMBANG — JURAGAN SEIMBANG (papan bisnis online)
+   SEIMBANG \u2014 JURAGAN SEIMBANG (papan bisnis online)
    Mesin permainan berjalan di server; HP hanya menampilkan
    dan mengirim langkah. Pemain online saling melihat lewat
    sinkronisasi berkala.
@@ -3193,7 +3193,7 @@ var App = (function () {
   var WARNA_NAMA = ['Merah', 'Biru', 'Hijau', 'Magenta'];
 
   function jt(n) {
-    n = Number(n) || 0; var a = Math.abs(n), s = n < 0 ? '−' : '';
+    n = Number(n) || 0; var a = Math.abs(n), s = n < 0 ? '\u2212' : '';
     if (a >= 1e6) return s + 'Rp' + (a / 1e6).toLocaleString('id-ID', { maximumFractionDigits: 2 }) + ' jt';
     if (a >= 1e3) return s + 'Rp' + Math.round(a / 1e3).toLocaleString('id-ID') + ' rb';
     return s + 'Rp' + a;
@@ -3211,7 +3211,7 @@ var App = (function () {
   }
   function kodeKey() { return 'jr-kode:' + (S.tamu ? 'tamu' : (S.user ? S.user.username : '')) + (A.DEMO ? ':' + sessionKey() : ''); }
 
-  /* ---------- koordinat papan 6×6 (20 petak keliling) ---------- */
+  /* ---------- koordinat papan 6\u00d76 (20 petak keliling) ---------- */
   function rc(i) {
     if (i <= 5) return [0, i];
     if (i <= 10) return [i - 5, 5];
@@ -3226,24 +3226,24 @@ var App = (function () {
     var simpan = A.store.get(kodeKey(), null);
     var html = '<main class="wrap page"><div class="row"><button class="btn sec sm" data-act="go" data-v="game">' + icon('chevL') + ' Arena game</button></div>' +
       '<section class="card jr-hero stack lg"><div class="jr-mini" aria-hidden="true">' + miniPapan() + '</div><div class="stack"><div class="eyebrow">Game papan online</div><h1 style="font-size:1.7rem">Juragan Seimbang</h1>' +
-      '<p class="muted" style="margin:0">Jadilah juragan usaha di Kota Jambi bersama 1–3 teman dari HP masing-masing. Beli usaha, tarik sewa, ambil kartu transaksi, dan jawab soal di Pos Akuntan. Setiap transaksi harus kamu catat pengaruhnya pada <b>Harta = Utang + Modal</b>. Pemenangnya: <b>modal akhir terbesar</b>, bukan kas terbanyak.</p>' +
+      '<p class="muted" style="margin:0">Jadilah juragan usaha di Kabupaten Batang Hari bersama 1\u20133 teman dari HP masing-masing. Beli usaha, tarik sewa, ambil kartu transaksi, dan jawab soal di Pos Akuntan. Setiap transaksi harus kamu catat pengaruhnya pada <b>Harta = Utang + Modal</b>. Pemenangnya: <b>modal akhir terbesar</b>, bukan kas terbanyak.</p>' +
       (best ? '<span class="pill hi" style="justify-self:start">' + icon('trophy') + ' Modal terbaikmu ' + jt(best * 1000) + '</span>' : '') + '</div></section>';
     if (!S.settings.game_dibuka) return html + '<div class="card empty">' + icon('lock') + '<p>Game sedang dikunci guru.</p></div></main>';
     if (simpan) html += '<div class="notice hi">' + icon('play') + '<div style="flex:1"><b>Permainan di ruang ' + esc(simpan) + ' masih berjalan.</b></div><button class="btn hi sm" data-act="jrLanjut">Lanjutkan</button></div>';
     html += '<div class="grid3">' +
-      '<button class="card jr-opt" data-act="jrKomputer">' + icon('game') + '<b>Lawan komputer</b><span class="small muted">Langsung main melawan 1–3 pemain komputer.</span></button>' +
+      '<button class="card jr-opt" data-act="jrKomputer">' + icon('game') + '<b>Lawan komputer</b><span class="small muted">Langsung main melawan 1\u20133 pemain komputer.</span></button>' +
       '<button class="card jr-opt" data-act="jrBuatBuka">' + icon('people') + '<b>Buat ruang online</b><span class="small muted">Dapatkan kode, bagikan ke teman sekelas.</span></button>' +
       '<form class="card jr-opt" data-form="jrGabung">' + icon('target') + '<b>Gabung pakai kode</b><div class="row nowrap" style="width:100%"><label class="sr" for="jr-kode">Kode ruang</label><input class="input num" id="jr-kode" name="kode" maxlength="4" autocapitalize="characters" autocomplete="off" placeholder="ABCD" style="text-transform:uppercase;letter-spacing:.2em;text-align:center;min-height:44px"><button class="btn sm" type="submit">Gabung</button></div></form>' +
       '</div>';
     if (A.DEMO) html += '<div class="notice">' + icon('info') + '<p class="small"><b>Coba main online di demo:</b> buat ruang di sini, lalu buka demo ini di tab baru, masuk sebagai <span class="cred">aulia01</span> / <span class="cred">demo123</span>, dan gabung dengan kodenya. Setelah dipasang di Apps Script, siswa bisa bermain bersama dari HP masing-masing.</p></div>';
     html += '<section class="card stack"><h2>Cara bermain</h2><ol class="small" style="margin:0;padding-left:1.2em;display:grid;gap:6px">' +
       '<li>Setiap pemain mulai dengan kas ' + jt(J.kasAwal) + ' dari setoran modal. Lempar dadu bergiliran.</li>' +
-      '<li><b>Petak usaha:</b> beli secara tunai atau dengan pinjaman bank. Pemain lain yang mendarat membayar sewa kepadamu. Punya satu grup warna lengkap, sewa jadi 2×. Renovasi juga membuat sewa 2×.</li>' +
+      '<li><b>Petak usaha:</b> beli secara tunai atau dengan pinjaman bank. Pemain lain yang mendarat membayar sewa kepadamu. Punya satu grup warna lengkap, sewa jadi 2\u00d7. Renovasi juga membuat sewa 2\u00d7.</li>' +
       '<li><b>Kartu transaksi:</b> kejadian usaha sehari-hari, seperti menerima pendapatan atau membayar gaji.</li>' +
       '<li><b>Setiap transaksi</b> kamu tebak pengaruhnya pada harta, utang, dan modal. Tepat: bonus ketelitian ' + jt(J.bonus) + '.</li>' +
       '<li><b>Pos Akuntan:</b> jawab soal, benar dapat hadiah ' + jt(J.hadiahPos) + '. <b>Audit:</b> salah menjawab membuatmu melewati satu giliran.</li>' +
       '<li>Melewati MULAI: pendapatan jasa ' + jt(J.gaji) + '. Kas kurang? Bank meminjamkan secara otomatis, tetapi utangmu bertambah.</li>' +
-      '<li>Setelah ronde terakhir, pemain dengan <b>modal = harta − utang</b> terbesar menjadi Juragan.</li></ol></section></main>';
+      '<li>Setelah ronde terakhir, pemain dengan <b>modal = harta \u2212 utang</b> terbesar menjadi Juragan.</li></ol></section></main>';
     return html;
   };
 
@@ -3261,21 +3261,21 @@ var App = (function () {
   }
   ACT.jrKomputer = function () {
     A.modal('<form class="stack" data-form="jrKomputer"><h2>Lawan komputer</h2><div class="field"><label for="jk-n">Jumlah lawan</label><select class="input" id="jk-n" name="bot"><option value="1">1 lawan</option><option value="2">2 lawan</option><option value="3" selected>3 lawan</option></select></div>' +
-      '<div class="field"><label for="jk-r">Jumlah ronde</label><select class="input" id="jk-r" name="ronde"><option value="5">5 ronde (±10 menit)</option><option value="8" selected>8 ronde (±15 menit)</option><option value="12">12 ronde (±25 menit)</option></select></div>' +
+      '<div class="field"><label for="jk-r">Jumlah ronde</label><select class="input" id="jk-r" name="ronde"><option value="5">5 ronde (\u00b110 menit)</option><option value="8" selected>8 ronde (\u00b115 menit)</option><option value="12">12 ronde (\u00b125 menit)</option></select></div>' +
       '<div class="row"><button type="button" class="btn sec" data-act="tutup" style="flex:1">Batal</button><button class="btn hi" type="submit" style="flex:1">' + icon('play') + ' Mulai</button></div></form>');
   };
   ACT['form:jrKomputer'] = function (f) {
-    var btn = f.querySelector('[type=submit]'); A.busy(btn, true, 'Menyiapkan papan…');
+    var btn = f.querySelector('[type=submit]'); A.busy(btn, true, 'Menyiapkan papan\u2026');
     call('jrBuat', { bot: Number(f.bot.value), ronde: Number(f.ronde.value), langsung: true }).then(function (r) { A.closeModal(); A.Sound.play('ok'); masuk(r.ruang); }, function (e) { A.busy(btn, false); A.toast(e.message, 'bad'); });
   };
   ACT.jrBuatBuka = function (el) {
-    A.busy(el, true, 'Membuat ruang…');
+    A.busy(el, true, 'Membuat ruang\u2026');
     call('jrBuat', { ronde: 8 }).then(function (r) { A.Sound.play('ok'); masuk(r.ruang); }, function (e) { A.busy(el, false); A.toast(e.message, 'bad'); });
   };
   ACT['form:jrGabung'] = function (f) {
     var kode = f.kode.value.trim().toUpperCase();
     if (kode.length !== 4) { A.toast('Kode ruang terdiri dari 4 karakter.', 'bad'); return; }
-    var btn = f.querySelector('[type=submit]'); A.busy(btn, true, '…');
+    var btn = f.querySelector('[type=submit]'); A.busy(btn, true, '\u2026');
     call('jrGabung', { kode: kode }).then(function (r) { A.Sound.play('ok'); masuk(r.ruang); }, function (e) { A.busy(btn, false); A.toast(e.message, 'bad'); });
   };
   ACT.jrLanjut = function () {
@@ -3286,8 +3286,8 @@ var App = (function () {
   /* ---------- ruang permainan ---------- */
   V.juraganMain = function (p) {
     var r = JG.ruang;
-    if (!r || r.kode !== p.kode) return { top: '', html: '<main class="wrap page no-nav"><div class="loading"><div class="spin"></div><span>Membuka papan…</span></div></main>' };
-    var top = '<div class="quiz-top"><div class="wrap"><button class="iconbtn" data-act="jrKeluar" aria-label="Keluar dari ruang">' + icon('x') + '</button><div style="flex:1;min-width:0"><b style="font-family:var(--f-display)">Juragan Seimbang</b><div class="tiny muted">Ruang <b class="num">' + esc(r.kode) + '</b>' + (r.status === 'main' ? ' · Ronde ' + Math.min(r.ronde, r.maksRonde) + '/' + r.maksRonde : r.status === 'tunggu' ? ' · menunggu pemain' : ' · selesai') + '</div></div><button class="iconbtn" data-act="suara" aria-label="Suara">' + icon(S.pref.suara ? 'volume' : 'mute') + '</button></div></div>';
+    if (!r || r.kode !== p.kode) return { top: '', html: '<main class="wrap page no-nav"><div class="loading"><div class="spin"></div><span>Membuka papan\u2026</span></div></main>' };
+    var top = '<div class="quiz-top"><div class="wrap"><button class="iconbtn" data-act="jrKeluar" aria-label="Keluar dari ruang">' + icon('x') + '</button><div style="flex:1;min-width:0"><b style="font-family:var(--f-display)">Juragan Seimbang</b><div class="tiny muted">Ruang <b class="num">' + esc(r.kode) + '</b>' + (r.status === 'main' ? ' \u00b7 Ronde ' + Math.min(r.ronde, r.maksRonde) + '/' + r.maksRonde : r.status === 'tunggu' ? ' \u00b7 menunggu pemain' : ' \u00b7 selesai') + '</div></div><button class="iconbtn" data-act="suara" aria-label="Suara">' + icon(S.pref.suara ? 'volume' : 'mute') + '</button></div></div>';
     return { top: top, html: '<main class="wrap page no-nav jr-page" id="jr-root">' + isiRuang(r) + '</main>' };
   };
   function isiRuang(r) {
@@ -3299,13 +3299,13 @@ var App = (function () {
 
   function ruangTunggu(r) {
     var host = r.pemain[r.saya] && r.pemain[r.saya].host;
-    return '<section class="card stack lg" style="text-align:center;justify-items:center"><div class="eyebrow">Kode ruang</div><div class="jr-code num">' + esc(r.kode) + '</div><p class="small muted" style="margin:0">Minta teman membuka menu Game → Juragan Seimbang → Gabung pakai kode.</p><button class="btn sec sm" data-act="jrSalin">' + icon('copy') + ' Salin kode</button></section>' +
+    return '<section class="card stack lg" style="text-align:center;justify-items:center"><div class="eyebrow">Kode ruang</div><div class="jr-code num">' + esc(r.kode) + '</div><p class="small muted" style="margin:0">Minta teman membuka menu Game \u2192 Juragan Seimbang \u2192 Gabung pakai kode.</p><button class="btn sec sm" data-act="jrSalin">' + icon('copy') + ' Salin kode</button></section>' +
       '<section class="card stack"><div class="sec-title"><h2>Pemain</h2><span class="muted small">' + r.pemain.length + '/' + J.maksPemain + '</span></div>' +
       r.pemain.map(function (p, i) { return '<div class="row nowrap jr-prow"><span class="jr-tok" style="background:' + WARNA[p.w] + '">' + esc(p.nama.charAt(0)) + '</span><b style="flex:1">' + esc(p.nama) + (i === r.saya ? ' (kamu)' : '') + '</b>' + (p.host ? '<span class="pill info">Pembuat</span>' : '') + (p.bot ? '<span class="pill">Komputer</span>' : '') + '</div>'; }).join('') + '</section>' +
       (host ? '<section class="card stack"><div class="field"><label for="jr-ronde">Jumlah ronde</label><select class="input" id="jr-ronde"><option value="5"' + (r.maksRonde === 5 ? ' selected' : '') + '>5 ronde</option><option value="8"' + (r.maksRonde === 8 ? ' selected' : '') + '>8 ronde</option><option value="12"' + (r.maksRonde === 12 ? ' selected' : '') + '>12 ronde</option></select></div>' +
         '<div class="grid2"><button class="btn sec" data-act="jrBot" ' + (r.pemain.length >= J.maksPemain ? 'disabled' : '') + '>' + icon('plus') + ' Tambah komputer</button><button class="btn hi" data-act="jrMulai" ' + (r.pemain.length < 2 ? 'disabled' : '') + '>' + icon('play') + ' Mulai main</button></div>' +
         (r.pemain.length < 2 ? '<p class="small muted" style="margin:0">Butuh minimal 2 pemain.</p>' : '') + '</section>'
-        : '<div class="notice">' + icon('clock') + '<p>Menunggu pembuat ruang memulai permainan…</p></div>');
+        : '<div class="notice">' + icon('clock') + '<p>Menunggu pembuat ruang memulai permainan\u2026</p></div>');
   }
 
   function papan(r) {
@@ -3313,7 +3313,7 @@ var App = (function () {
       var p = rc(i), m = r.milik[i], own = m ? r.pemain[m.p] : null;
       var style = 'grid-row:' + (p[0] + 1) + ';grid-column:' + (p[1] + 1) + ';' + (own ? '--own:' + WARNA[own.w] + ';' : '');
       var inner;
-      if (t.tipe === 'usaha') inner = '<i class="jr-g" style="background:var(--g' + t.g + ')"></i><span class="jr-n">' + esc(t.s) + '</span><span class="jr-h num">' + jt(t.h).replace('Rp', '').replace(' jt', 'jt') + '</span>' + (m && m.lv > 1 ? '<span class="jr-lv" aria-label="direnovasi">★</span>' : '');
+      if (t.tipe === 'usaha') inner = '<i class="jr-g" style="background:var(--g' + t.g + ')"></i><span class="jr-n">' + esc(t.s) + '</span><span class="jr-h num">' + jt(t.h).replace('Rp', '').replace(' jt', 'jt') + '</span>' + (m && m.lv > 1 ? '<span class="jr-lv" aria-label="direnovasi">\u2605</span>' : '');
       else inner = icon(IKON_PETAK[t.tipe]) + '<span class="jr-n">' + esc(t.s) + '</span>';
       return '<button class="jr-cell t-' + t.tipe + (own ? ' owned' : '') + (r.status === 'main' && r.pemain[r.giliran].pos === i ? ' here' : '') + '" style="' + style + '" data-act="jrPetak" data-i="' + i + '" aria-label="' + esc(t.n) + (own ? ', milik ' + esc(own.nama) : '') + '">' + inner + '</button>';
     }).join('');
@@ -3356,9 +3356,9 @@ var App = (function () {
 
   function opsiLabel(a, o) {
     var t = J.petak[a.petak], me = JG.ruang.pemain[JG.ruang.saya];
-    if (a.tipe === 'beli') return { tunai: ['Beli tunai', 'Kas −' + jt(t.h)], kredit: ['Beli dengan pinjaman bank', 'Utang +' + jt(t.h)], lewati: ['Lewati', 'Tidak membeli'] }[o];
-    if (a.tipe === 'renov') return { renov: ['Renovasi', 'Kas −' + jt(t.h / 2) + ', sewa 2×'], lewati: ['Lewati', ''] }[o];
-    return { pinjam: ['Pinjam ke bank', 'Kas & utang +' + jt(J.pinjam)], lunasi: ['Lunasi utang', 'Kas & utang −' + jt(J.pinjam)], lewati: ['Lewati', 'Utangmu ' + jt(me.utang)] }[o];
+    if (a.tipe === 'beli') return { tunai: ['Beli tunai', 'Kas \u2212' + jt(t.h)], kredit: ['Beli dengan pinjaman bank', 'Utang +' + jt(t.h)], lewati: ['Lewati', 'Tidak membeli'] }[o];
+    if (a.tipe === 'renov') return { renov: ['Renovasi', 'Kas \u2212' + jt(t.h / 2) + ', sewa 2\u00d7'], lewati: ['Lewati', ''] }[o];
+    return { pinjam: ['Pinjam ke bank', 'Kas & utang +' + jt(J.pinjam)], lunasi: ['Lunasi utang', 'Kas & utang \u2212' + jt(J.pinjam)], lewati: ['Lewati', 'Utangmu ' + jt(me.utang)] }[o];
   }
   function panel(r) {
     var cp = r.pemain[r.giliran], saya = r.giliran === r.saya, a = r.aksi;
@@ -3369,7 +3369,7 @@ var App = (function () {
     }
     html += '<div class="timebar" aria-hidden="true"><i id="jr-tb" style="width:100%"></i></div>';
     if (!saya) {
-      var desk = { lempar: 'sedang melempar dadu…', pilih: a ? (a.tipe === 'beli' ? 'memutuskan membeli ' + J.petak[a.petak].n : a.tipe === 'renov' ? 'memutuskan renovasi ' + J.petak[a.petak].n : 'sedang di bank') : '', tebak: 'mencatat transaksi: ' + (a ? a.teks : ''), soal: 'menjawab soal: ' + (a ? a.q : '') }[r.fase] || '';
+      var desk = { lempar: 'sedang melempar dadu\u2026', pilih: a ? (a.tipe === 'beli' ? 'memutuskan membeli ' + J.petak[a.petak].n : a.tipe === 'renov' ? 'memutuskan renovasi ' + J.petak[a.petak].n : 'sedang di bank') : '', tebak: 'mencatat transaksi: ' + (a ? a.teks : ''), soal: 'menjawab soal: ' + (a ? a.q : '') }[r.fase] || '';
       return html + '<div class="row nowrap" style="align-items:flex-start"><span class="jr-tok" style="background:' + WARNA[cp.w] + ';flex:none">' + esc(cp.nama.charAt(0)) + '</span><div><b>Giliran ' + esc(cp.nama) + '</b><p class="small muted" style="margin:2px 0 0">' + esc(desk) + '</p></div></div></section>';
     }
     if (r.fase === 'lempar') {
@@ -3377,16 +3377,16 @@ var App = (function () {
     } else if (r.fase === 'pilih') {
       var t = J.petak[a.petak], me = r.pemain[r.saya];
       html += a.tipe === 'bank' ? '<div class="eyebrow">Bank Daerah</div><h3>Mau pinjam atau melunasi utang?</h3>' :
-        '<div class="eyebrow">' + (a.tipe === 'renov' ? 'Usahamu sendiri' : 'Usaha dijual · grup ' + esc(J.grup[t.g])) + '</div><h3 class="row" style="gap:8px"><i class="jr-g big" style="background:var(--g' + t.g + ')"></i>' + esc(t.n) + '</h3><p class="small muted" style="margin:0">Harga ' + jt(t.h) + ' · sewa ' + jt(t.w) + ' · kas kamu ' + jt(me.kas) + '</p>';
+        '<div class="eyebrow">' + (a.tipe === 'renov' ? 'Usahamu sendiri' : 'Usaha dijual \u00b7 grup ' + esc(J.grup[t.g])) + '</div><h3 class="row" style="gap:8px"><i class="jr-g big" style="background:var(--g' + t.g + ')"></i>' + esc(t.n) + '</h3><p class="small muted" style="margin:0">Harga ' + jt(t.h) + ' \u00b7 sewa ' + jt(t.w) + ' \u00b7 kas kamu ' + jt(me.kas) + '</p>';
       html += '<div class="stack">' + a.opsi.map(function (o) { var l = opsiLabel(a, o); return '<button class="btn ' + (o === 'lewati' ? 'sec' : o === 'kredit' || o === 'pinjam' ? 'sec' : '') + ' jr-pick" data-act="jrPilih" data-o="' + o + '"><span>' + esc(l[0]) + '</span>' + (l[1] ? '<small>' + esc(l[1]) + '</small>' : '') + '</button>'; }).join('') + '</div>';
     } else if (r.fase === 'tebak') {
       var lab = ['Harta', 'Utang', 'Modal'];
-      html += '<div class="eyebrow">Catat transaksinya · bonus ' + jt(J.bonus) + ' jika tepat</div><div class="nota"><div class="nota-head"><span>Transaksi</span><span>' + esc(cp.nama) + '</span></div><div class="nota-body">' + esc(a.teks) + '</div></div>' +
+      html += '<div class="eyebrow">Catat transaksinya \u00b7 bonus ' + jt(J.bonus) + ' jika tepat</div><div class="nota"><div class="nota-head"><span>Transaksi</span><span>' + esc(cp.nama) + '</span></div><div class="nota-body">' + esc(a.teks) + '</div></div>' +
         '<div class="predict">' + lab.map(function (l, k) {
           return '<div class="predict-row"><b>' + l + '</b><div class="seg" role="group" aria-label="' + l + '">' + [[1, 'up', 'Naik'], [0, 'eq', 'Tetap'], [-1, 'down', 'Turun']].map(function (o) { return '<button data-act="jrPred" data-k="' + k + '" data-v="' + o[0] + '" aria-pressed="' + (JG.pred[k] === o[0]) + '">' + icon(o[1]) + o[2] + '</button>'; }).join('') + '</div></div>';
         }).join('') + '</div><button class="btn block" data-act="jrKirimTebak" ' + (JG.pred.indexOf(null) >= 0 ? 'disabled' : '') + '>' + icon('check') + ' Kunci jawaban</button>';
     } else if (r.fase === 'soal') {
-      html += '<div class="eyebrow">' + (a.tipe === 'audit' ? 'Pemeriksaan auditor · salah = lewati 1 giliran' : 'Pos Akuntan · hadiah ' + jt(J.hadiahPos)) + '</div><div class="qtext">' + esc(a.q) + '</div><div class="qopts">' + a.o.map(function (o, j) { return '<button class="qopt" data-act="jrSoal" data-o="' + j + '"><span class="k">' + 'ABC'[j] + '</span><span>' + esc(o) + '</span></button>'; }).join('') + '</div>';
+      html += '<div class="eyebrow">' + (a.tipe === 'audit' ? 'Pemeriksaan auditor \u00b7 salah = lewati 1 giliran' : 'Pos Akuntan \u00b7 hadiah ' + jt(J.hadiahPos)) + '</div><div class="qtext">' + esc(a.q) + '</div><div class="qopts">' + a.o.map(function (o, j) { return '<button class="qopt" data-act="jrSoal" data-o="' + j + '"><span class="k">' + 'ABC'[j] + '</span><span>' + esc(o) + '</span></button>'; }).join('') + '</div>';
     }
     return html + '</section>';
   }
@@ -3395,7 +3395,7 @@ var App = (function () {
       var harta = p.kas + p.aset, usaha = Object.keys(r.milik).filter(function (k) { return r.milik[k].p === i; }).length;
       return '<div class="jr-ply ' + (i === r.giliran ? 'turn' : '') + '"><div class="row nowrap" style="gap:8px"><span class="jr-tok" style="background:' + WARNA[p.w] + '">' + esc(p.nama.charAt(0)) + '</span><b style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">' + esc(p.nama) + (i === r.saya ? ' (kamu)' : '') + '</b>' + (p.lewati ? '<span class="pill bad">lewati giliran</span>' : '') + '<span class="tiny muted">' + usaha + ' usaha</span></div>' +
         '<div class="jr-eq num"><span><small>Harta</small>' + jt(harta) + '</span><i>=</i><span><small>Utang</small>' + jt(p.utang) + '</span><i>+</i><span class="m"><small>Modal</small>' + jt(p.modal) + '</span></div>' +
-        '<div class="tiny muted">Kas ' + jt(p.kas) + ' · aset usaha ' + jt(p.aset) + ' · jawaban tepat ' + p.benar + '/' + (p.benar + p.salah) + '</div></div>';
+        '<div class="tiny muted">Kas ' + jt(p.kas) + ' \u00b7 aset usaha ' + jt(p.aset) + ' \u00b7 jawaban tepat ' + p.benar + '/' + (p.benar + p.salah) + '</div></div>';
     }).join('') + '</section>';
   }
   function logList(r) {
@@ -3449,7 +3449,7 @@ var App = (function () {
     var sisa = Math.max(0, J.batasWaktu - ((Date.now() + JG.offset) - r.faseMulai));
     var bar = A.$('#jr-tb'), t = A.$('#jr-timer');
     if (bar) { bar.style.width = (sisa / J.batasWaktu * 100) + '%'; bar.classList.toggle('low', sisa < 15000); }
-    if (t) t.textContent = r.pemain[r.giliran].bot ? 'komputer berpikir…' : Math.ceil(sisa / 1000) + ' detik';
+    if (t) t.textContent = r.pemain[r.giliran].bot ? 'komputer berpikir\u2026' : Math.ceil(sisa / 1000) + ' detik';
   }
   AFTER.juraganMain = function (p) {
     if (!JG.ruang || JG.ruang.kode !== p.kode) {
@@ -3517,7 +3517,7 @@ var App = (function () {
       istirahat: 'Petak aman, tidak terjadi apa-apa.'
     }[t.tipe];
     A.modal('<div class="row between nowrap"><h2>' + esc(t.n) + '</h2><button class="iconbtn" data-act="tutup" aria-label="Tutup">' + icon('x') + '</button></div>' +
-      (t.tipe === 'usaha' ? '<div class="mini-kpis"><div class="kpi"><span>Harga</span><b>' + jt(t.h) + '</b></div><div class="kpi"><span>Sewa</span><b>' + jt(r ? (m ? sewaKlien(r, i) : t.w) : t.w) + '</b></div><div class="kpi"><span>Grup</span><b style="font-size:1rem">' + esc(J.grup[t.g]) + '</b></div></div><p class="small muted" style="margin:0">' + (own ? 'Milik <b>' + esc(own.nama) + '</b>' + (m.lv > 1 ? ', sudah direnovasi (sewa 2×)' : '') + '.' : 'Belum dimiliki siapa pun.') + ' Satu grup lengkap membuat sewa 2×.</p>' : '<p class="muted" style="margin:0">' + esc(ket) + '</p>'));
+      (t.tipe === 'usaha' ? '<div class="mini-kpis"><div class="kpi"><span>Harga</span><b>' + jt(t.h) + '</b></div><div class="kpi"><span>Sewa</span><b>' + jt(r ? (m ? sewaKlien(r, i) : t.w) : t.w) + '</b></div><div class="kpi"><span>Grup</span><b style="font-size:1rem">' + esc(J.grup[t.g]) + '</b></div></div><p class="small muted" style="margin:0">' + (own ? 'Milik <b>' + esc(own.nama) + '</b>' + (m.lv > 1 ? ', sudah direnovasi (sewa 2\u00d7)' : '') + '.' : 'Belum dimiliki siapa pun.') + ' Satu grup lengkap membuat sewa 2\u00d7.</p>' : '<p class="muted" style="margin:0">' + esc(ket) + '</p>'));
   };
   function sewaKlien(r, i) {
     var t = J.petak[i], m = r.milik[i], s = t.w * (m.lv >= 2 ? 2 : 1);
@@ -3541,7 +3541,7 @@ var App = (function () {
 
 ;
 /* =========================================================
-   SEIMBANG — DASBOR GURU
+   SEIMBANG \u2014 DASBOR GURU
    ========================================================= */
 var Guru = (function (A) {
   'use strict';
@@ -3608,7 +3608,7 @@ var Guru = (function (A) {
       '<label class="row small" style="gap:8px"><span class="tog" style="width:44px;height:26px"><input type="checkbox" id="gf-pantau" data-gf="pantau" ' + (S.gPantau ? 'checked' : '') + '><i style="transform:scale(.85);transform-origin:left center"></i></span>Pantau langsung</label>' +
       '<button class="btn sec sm" data-act="gMuat">' + icon('refresh') + ' Muat ulang</button></div>';
     var demo = A.DEMO ? '<div class="notice hi">' + icon('bolt') + '<p class="small"><b>Mode demo dengan data contoh.</b> Nama siswa selain "Siswa Demo" adalah contoh fiktif. Pada pemasangan sebenarnya, data tersimpan di Google Sheet guru.</p></div>' : '';
-    return '<div class="wrap wide" style="border-bottom:1px solid var(--line);background:var(--surface)">' + tabs + '</div><main class="wrap wide page" style="padding-bottom:48px">' + demo + filt + (S.dash ? inner() : '<div class="loading"><div class="spin"></div><span>Memuat data kelas…</span></div>') + '</main>';
+    return '<div class="wrap wide" style="border-bottom:1px solid var(--line);background:var(--surface)">' + tabs + '</div><main class="wrap wide page" style="padding-bottom:48px">' + demo + filt + (S.dash ? inner() : '<div class="loading"><div class="spin"></div><span>Memuat data kelas\u2026</span></div>') + '</main>';
   }
   TABS.forEach(function (t) { AFTER[t[0]] = function () { if (!S.dash) muat(); }; });
   ACT.gMuat = function () { muat(); };
@@ -3640,7 +3640,7 @@ var Guru = (function (A) {
         kpi(aktif.length, 'Siswa aktif', sw.length + ' terdaftar') +
         kpi(aktif24, 'Belajar 24 jam terakhir', sw.length ? Math.round(aktif24 / sw.length * 100) + '% kelas' : '') +
         kpi(Math.round(avg(sw.map(rataMisi))) + '%', 'Rata-rata progres misi', sw.filter(function (x) { return x.misi.every(function (v) { return v >= 100; }); }).length + ' siswa tamat semua misi') +
-        kpi(sudah.length ? Math.round(avg(sudah.map(function (x) { return x.kuis_terbaik; }))) : '–', 'Rata-rata nilai kuis', sudah.length + ' dari ' + sw.length + ' sudah kuis') +
+        kpi(sudah.length ? Math.round(avg(sudah.map(function (x) { return x.kuis_terbaik; }))) : '\u2013', 'Rata-rata nilai kuis', sudah.length + ' dari ' + sw.length + ' sudah kuis') +
         kpi(tuntas.length, 'Tuntas (KKTP ' + s.kktp + ')', sudah.length ? Math.round(tuntas.length / sudah.length * 100) + '% dari yang sudah kuis' : 'belum ada nilai') +
         kpi(reflF().filter(function (r) { return !r.balasan; }).length, 'Refleksi menunggu balasan', reflF().length + ' refleksi masuk') +
         '</div>';
@@ -3652,25 +3652,25 @@ var Guru = (function (A) {
         '<div class="row small"><span class="muted">Ajak kelas ke:</span>' + ['', 'm1', 'm2', 'm3', 'm4', 'kuis', 'game'].map(function (f) { return '<button class="pill ' + (s.fokus === f ? 'info' : '') + '" style="border:0;cursor:pointer" data-act="gFokus" data-f="' + f + '">' + (f ? (f[0] === 'm' ? 'Misi ' + f[1] : f === 'kuis' ? 'Kuis' : 'Game') : 'Tidak ada') + '</button>'; }).join('') + '</div></section>';
       // grafik
       var best = sw.filter(function (x) { return x.kuis_percobaan > 0; }).map(function (x) { return x.kuis_terbaik; });
-      var bins = [[0, 59, '<60'], [60, s.kktp - 1, '60–' + (s.kktp - 1)], [s.kktp, 89, s.kktp + '–89'], [90, 100, '90–100']];
+      var bins = [[0, 59, '<60'], [60, s.kktp - 1, '60\u2013' + (s.kktp - 1)], [s.kktp, 89, s.kktp + '\u201389'], [90, 100, '90\u2013100']];
       var cnt = bins.map(function (b) { return best.filter(function (v) { return v >= b[0] && v <= b[1]; }).length; });
       var mx = Math.max(1, Math.max.apply(null, cnt));
       var tp = tpStat();
       var lemah = tp.filter(function (t) { return t.n; }).sort(function (a, b) { return a.pc - b.pc; })[0];
       html += '<div class="grid2"><section class="card stack"><h2>Sebaran nilai kuis terbaik</h2>' + (best.length ? '<div class="dist">' + bins.map(function (b, i) { return '<div><b>' + cnt[i] + '</b><i style="height:' + Math.round(cnt[i] / mx * 110) + 'px"></i><span>' + b[2] + '</span></div>'; }).join('') + '</div>' : '<div class="empty small">Belum ada siswa yang mengerjakan kuis.</div>') + '</section>' +
-        '<section class="card stack"><h2>Ketercapaian per TP</h2><p class="small muted" style="margin:0">Persentase jawaban benar pada kuis, dikelompokkan per tujuan pembelajaran.</p>' + tp.map(function (t) { return '<div class="hbar"><span>TP ' + t.no + ' · Misi ' + t.no + '</span><div class="bar ' + (t.pc >= 70 ? 'ok' : '') + '"><i style="width:' + t.pc + '%;' + (t.pc < 70 ? 'background:var(--warn)' : '') + '"></i></div><b class="num">' + (t.n ? t.pc + '%' : '–') + '</b></div>'; }).join('') +
+        '<section class="card stack"><h2>Ketercapaian per TP</h2><p class="small muted" style="margin:0">Persentase jawaban benar pada kuis, dikelompokkan per tujuan pembelajaran.</p>' + tp.map(function (t) { return '<div class="hbar"><span>TP ' + t.no + ' \u00b7 Misi ' + t.no + '</span><div class="bar ' + (t.pc >= 70 ? 'ok' : '') + '"><i style="width:' + t.pc + '%;' + (t.pc < 70 ? 'background:var(--warn)' : '') + '"></i></div><b class="num">' + (t.n ? t.pc + '%' : '\u2013') + '</b></div>'; }).join('') +
         (lemah && lemah.pc < 70 ? '<div class="notice hi">' + icon('bulb') + '<p class="small"><b>Perlu penguatan: TP ' + lemah.no + '.</b> ' + esc(CP.tp[lemah.no - 1]) + ' Pertimbangkan membahas ulang Misi ' + lemah.no + ' bersama, lalu ajak kelas ke misi itu.</p></div>' : '') + '</section></div>';
       // progres misi
       html += '<section class="card stack"><h2>Penyelesaian misi</h2>' + MISI.map(function (m, i) {
         var done = sw.filter(function (x) { return x.misi[i] >= 100; }).length, pc = sw.length ? Math.round(done / sw.length * 100) : 0;
-        return '<div class="hbar"><span>Misi ' + m.no + ' · ' + esc(m.judul) + '</span><div class="bar ok"><i style="width:' + pc + '%"></i></div><b class="num">' + done + '/' + sw.length + '</b></div>';
+        return '<div class="hbar"><span>Misi ' + m.no + ' \u00b7 ' + esc(m.judul) + '</span><div class="bar ok"><i style="width:' + pc + '%"></i></div><b class="num">' + done + '/' + sw.length + '</b></div>';
       }).join('') + '</section>';
       // tindak lanjut
       var remed = sudah.filter(function (x) { return x.kuis_terbaik < s.kktp; }).sort(function (a, b) { return a.kuis_terbaik - b.kuis_terbaik; });
       var belum = sw.filter(function (x) { return !x.kuis_percobaan && x.aktif; });
       var kaya = tuntas.slice().sort(function (a, b) { return b.kuis_terbaik - a.kuis_terbaik; });
       html += '<section class="card stack"><h2>Tindak lanjut pembelajaran</h2><div class="grid3">' +
-        tlCol('Remedial', 'bad', remed, function (x) { var w = tpLemahSiswa(x.username); return x.kuis_terbaik + (w ? ' · lemah di TP ' + w : ''); }) +
+        tlCol('Remedial', 'bad', remed, function (x) { var w = tpLemahSiswa(x.username); return x.kuis_terbaik + (w ? ' \u00b7 lemah di TP ' + w : ''); }) +
         tlCol('Belum mengerjakan kuis', 'warn', belum, function (x) { return 'Progres misi ' + rataMisi(x) + '%'; }) +
         tlCol('Pengayaan', 'ok', kaya, function (x) { return 'Nilai ' + x.kuis_terbaik; }) + '</div></section>';
       // refleksi
@@ -3724,10 +3724,10 @@ var Guru = (function (A) {
       var html = '<div class="toolbar"><label class="sr" for="gf-cari">Cari siswa</label><input class="input" id="gf-cari" data-gf="cari" placeholder="Cari nama atau username" value="' + esc(S.gf.cari) + '">' +
         '<button class="btn sm" data-act="gTambah">' + icon('plus') + ' Tambah siswa</button><button class="btn sec sm" data-act="gTempel">' + icon('people') + ' Tempel daftar nama</button><button class="btn sec sm" data-act="gSalinAkun">' + icon('copy') + ' Daftar akun</button></div>';
       if (!sw.length) return html + '<div class="card empty">' + icon('people') + '<p>Belum ada siswa di ' + (S.gf.kelas === 'semua' ? 'kelas mana pun' : esc(S.gf.kelas)) + '.</p><p class="small">Gunakan <b>Tempel daftar nama</b> untuk membuat banyak akun sekaligus dari daftar hadir.</p></div>';
-      html += '<div class="card" style="padding:0;overflow:hidden"><div class="tbl-wrap" style="border:0;margin:0;border-radius:0"><table class="stu-tbl"><thead><tr><th>Siswa</th><th>Misi 1–4</th><th class="r">XP</th><th class="r">Kuis</th></tr></thead><tbody id="stu-body">' +
+      html += '<div class="card" style="padding:0;overflow:hidden"><div class="tbl-wrap" style="border:0;margin:0;border-radius:0"><table class="stu-tbl"><thead><tr><th>Siswa</th><th>Misi 1\u20134</th><th class="r">XP</th><th class="r">Kuis</th></tr></thead><tbody id="stu-body">' +
         sw.map(function (s) {
           var hide = q && (s.nama + ' ' + s.username).toLowerCase().indexOf(q) < 0;
-          return '<tr class="click" data-act="gDetail" data-u="' + esc(s.username) + '" data-q="' + esc((s.nama + ' ' + s.username).toLowerCase()) + '" ' + (hide ? 'hidden' : '') + '><td><b>' + esc(s.nama) + '</b>' + (s.aktif ? '' : ' <span class="pill bad">nonaktif</span>') + '<div class="tiny muted"><span class="num">' + esc(s.username) + '</span> · ' + esc(s.kelas || 'tanpa kelas') + ' · ' + A.sejak(s.diperbarui || s.login_terakhir) + '</div></td><td>' + mdots(s.misi) + '</td><td class="r num">' + fmtN(s.xp) + '</td><td class="r">' + (s.kuis_percobaan ? '<b class="num" style="color:' + (s.kuis_terbaik >= S.settings.kktp ? 'var(--plus)' : 'var(--minus)') + '">' + s.kuis_terbaik + '</b><div class="tiny muted">' + s.kuis_percobaan + '×</div>' : '<span class="muted">–</span>') + '</td></tr>';
+          return '<tr class="click" data-act="gDetail" data-u="' + esc(s.username) + '" data-q="' + esc((s.nama + ' ' + s.username).toLowerCase()) + '" ' + (hide ? 'hidden' : '') + '><td><b>' + esc(s.nama) + '</b>' + (s.aktif ? '' : ' <span class="pill bad">nonaktif</span>') + '<div class="tiny muted"><span class="num">' + esc(s.username) + '</span> \u00b7 ' + esc(s.kelas || 'tanpa kelas') + ' \u00b7 ' + A.sejak(s.diperbarui || s.login_terakhir) + '</div></td><td>' + mdots(s.misi) + '</td><td class="r num">' + fmtN(s.xp) + '</td><td class="r">' + (s.kuis_percobaan ? '<b class="num" style="color:' + (s.kuis_terbaik >= S.settings.kktp ? 'var(--plus)' : 'var(--minus)') + '">' + s.kuis_terbaik + '</b><div class="tiny muted">' + s.kuis_percobaan + '\u00d7</div>' : '<span class="muted">\u2013</span>') + '</td></tr>';
         }).join('') + '</tbody></table></div></div><p class="tiny muted">Ketuk baris siswa untuk melihat detail, mengatur ulang sandi, atau menambah kesempatan kuis.</p>';
       return html;
     });
@@ -3741,12 +3741,12 @@ var Guru = (function (A) {
     var cat = (s.data && s.data.catatan) || {};
     var pm = [];
     MISI.forEach(function (m) { m.bagian.forEach(function (b, i) { var k = m.id + '-' + i; if (b.pemantik && cat[k]) pm.push({ q: b.pemantik.tanya, a: cat[k], m: m.no }); }); });
-    var sisa = S.settings.kuis_maks ? Math.max(0, S.settings.kuis_maks + s.kuis_tambahan - s.kuis_percobaan) : '∞';
-    A.modal('<div class="row between nowrap"><div style="min-width:0"><h2>' + esc(s.nama) + '</h2><p class="small muted" style="margin:2px 0 0">' + esc(s.kelas || 'Tanpa kelas') + ' · <span class="num">' + esc(s.username) + '</span></p></div><button class="iconbtn" data-act="tutup" aria-label="Tutup">' + icon('x') + '</button></div>' +
+    var sisa = S.settings.kuis_maks ? Math.max(0, S.settings.kuis_maks + s.kuis_tambahan - s.kuis_percobaan) : '\u221e';
+    A.modal('<div class="row between nowrap"><div style="min-width:0"><h2>' + esc(s.nama) + '</h2><p class="small muted" style="margin:2px 0 0">' + esc(s.kelas || 'Tanpa kelas') + ' \u00b7 <span class="num">' + esc(s.username) + '</span></p></div><button class="iconbtn" data-act="tutup" aria-label="Tutup">' + icon('x') + '</button></div>' +
       (s.sandi_awal ? '<div class="notice">' + icon('key') + '<p class="small">Sandi awal: <span class="cred">' + esc(s.sandi_awal) + '</span> <span class="muted">(hilang dari sini setelah siswa menggantinya)</span></p></div>' : '<p class="tiny muted" style="margin:0">Siswa sudah mengganti sandi awalnya.</p>') +
-      '<div class="mini-kpis"><div class="kpi"><span>XP · level</span><b>' + fmtN(s.xp) + '</b><small>' + esc(s.level) + '</small></div><div class="kpi"><span>Kuis terbaik</span><b>' + (s.kuis_percobaan ? s.kuis_terbaik : '–') + '</b><small>' + s.kuis_percobaan + '× coba · sisa ' + sisa + '</small></div><div class="kpi"><span>Lencana</span><b>' + s.lencana + '</b><small>dari ' + LENCANA.length + '</small></div></div>' +
+      '<div class="mini-kpis"><div class="kpi"><span>XP \u00b7 level</span><b>' + fmtN(s.xp) + '</b><small>' + esc(s.level) + '</small></div><div class="kpi"><span>Kuis terbaik</span><b>' + (s.kuis_percobaan ? s.kuis_terbaik : '\u2013') + '</b><small>' + s.kuis_percobaan + '\u00d7 coba \u00b7 sisa ' + sisa + '</small></div><div class="kpi"><span>Lencana</span><b>' + s.lencana + '</b><small>dari ' + LENCANA.length + '</small></div></div>' +
       '<div class="stack" style="gap:6px">' + MISI.map(function (m, i) { return '<div class="hbar"><span class="small">Misi ' + m.no + '</span><div class="bar ' + (s.misi[i] >= 100 ? 'ok' : '') + '"><i style="width:' + s.misi[i] + '%"></i></div><b class="num small">' + s.misi[i] + '%</b></div>'; }).join('') + '</div>' +
-      '<div class="small muted">Game terbaik: Timbangan <b class="num">' + fmtN(s.game.timbangan) + '</b> · Akun Kilat <b class="num">' + fmtN(s.game.akun) + '</b> · Detektif <b class="num">' + fmtN(s.game.detektif) + '</b> · Juragan <b class="num">' + (s.game.juragan ? 'Rp' + (s.game.juragan / 1000).toLocaleString('id-ID', { maximumFractionDigits: 1 }) + ' jt' : '–') + '</b></div>' +
+      '<div class="small muted">Game terbaik: Timbangan <b class="num">' + fmtN(s.game.timbangan) + '</b> \u00b7 Akun Kilat <b class="num">' + fmtN(s.game.akun) + '</b> \u00b7 Detektif <b class="num">' + fmtN(s.game.detektif) + '</b> \u00b7 Juragan <b class="num">' + (s.game.juragan ? 'Rp' + (s.game.juragan / 1000).toLocaleString('id-ID', { maximumFractionDigits: 1 }) + ' jt' : '\u2013') + '</b></div>' +
       (att.length ? '<div class="tbl-wrap"><table><thead><tr><th>Percobaan</th><th>Waktu</th><th class="r">Nilai</th></tr></thead><tbody>' + att.map(function (r) { return '<tr><td>' + r.percobaan + '</td><td class="small">' + A.tgl(r.waktu) + '</td><td class="r num"><b>' + r.nilai + '</b></td></tr>'; }).join('') + '</tbody></table></div>' : '') +
       (pm.length ? '<div class="stack" style="gap:8px"><b class="small">Jawaban pertanyaan pemantik</b>' + pm.map(function (x) { return '<div class="reply small"><span class="muted">Misi ' + x.m + ': ' + esc(x.q) + '</span><br>' + esc(x.a) + '</div>'; }).join('') + '</div>' : '') +
       '<div class="grid2"><button class="btn sec sm" data-act="gReset" data-u="' + esc(s.username) + '">' + icon('key') + ' Atur ulang sandi</button><button class="btn sec sm" data-act="gKesempatan" data-u="' + esc(s.username) + '">' + icon('plus') + ' Tambah 1 kesempatan kuis</button>' +
@@ -3789,7 +3789,7 @@ var Guru = (function (A) {
       '<div class="row"><button type="button" class="btn sec" data-act="tutup" style="flex:1">Batal</button><button class="btn" type="submit" style="flex:1">' + icon('plus') + ' Buat akun</button></div></form>');
   };
   ACT['form:gTambah'] = function (f) {
-    var btn = f.querySelector('[type=submit]'); A.busy(btn, true, 'Membuat…');
+    var btn = f.querySelector('[type=submit]'); A.busy(btn, true, 'Membuat\u2026');
     A.Api.call('tambahSiswa', { daftar: [{ nama: f.nama.value, kelas: f.kelas.value, username: f.username.value, password: f.password.value }] }).then(function (r) { hasilAkun(r); muat(true); }, function (e) { A.busy(btn, false); A.toast(e.message, 'bad'); });
   };
   ACT.gTempel = function () {
@@ -3810,7 +3810,7 @@ var Guru = (function (A) {
   ACT['form:gTempel'] = function (f) {
     var list = parseDaftar(f.daftar.value, f.kelas.value.trim());
     if (!list.length) { A.toast('Daftar nama masih kosong.', 'bad'); return; }
-    var btn = f.querySelector('[type=submit]'); A.busy(btn, true, 'Membuat ' + list.length + ' akun…');
+    var btn = f.querySelector('[type=submit]'); A.busy(btn, true, 'Membuat ' + list.length + ' akun\u2026');
     A.Api.call('tambahSiswa', { daftar: list }).then(function (r) { hasilAkun(r); muat(true); }, function (e) { A.busy(btn, false); A.toast(e.message, 'bad'); });
   };
   function teksAkun(list) {
@@ -3877,7 +3877,7 @@ var Guru = (function (A) {
       html += '<section class="card" style="padding:0;overflow:hidden"><div class="tbl-wrap" style="border:0;margin:0;border-radius:0"><table><thead><tr><th>No</th><th>Nama</th><th>Kelas</th><th class="r">Nilai</th><th class="r">Coba</th><th>Status</th><th class="r">Misi</th><th class="r">XP</th></tr></thead><tbody>' +
         sw.map(function (x, i) {
           var st = !x.kuis_percobaan ? '<span class="pill">Belum kuis</span>' : x.kuis_terbaik >= s.kktp ? '<span class="pill ok">Tuntas</span>' : '<span class="pill bad">Remedial</span>';
-          return '<tr><td class="num">' + (i + 1) + '</td><td><b>' + esc(x.nama) + '</b></td><td class="small">' + esc(x.kelas) + '</td><td class="r num"><b>' + (x.kuis_percobaan ? x.kuis_terbaik : '–') + '</b></td><td class="r num">' + x.kuis_percobaan + '</td><td>' + st + '</td><td class="r num">' + rataMisi(x) + '%</td><td class="r num">' + fmtN(x.xp) + '</td></tr>';
+          return '<tr><td class="num">' + (i + 1) + '</td><td><b>' + esc(x.nama) + '</b></td><td class="small">' + esc(x.kelas) + '</td><td class="r num"><b>' + (x.kuis_percobaan ? x.kuis_terbaik : '\u2013') + '</b></td><td class="r num">' + x.kuis_percobaan + '</td><td>' + st + '</td><td class="r num">' + rataMisi(x) + '%</td><td class="r num">' + fmtN(x.xp) + '</td></tr>';
         }).join('') + '</tbody></table></div></section>';
       html += '<div class="sec-title"><h2>Riwayat pengerjaan</h2><span class="small muted">' + att.length + ' percobaan</span></div>';
       html += att.length ? '<section class="card" style="padding:0;overflow:hidden"><div class="tbl-wrap" style="border:0;margin:0;border-radius:0"><table><thead><tr><th>Waktu</th><th>Nama</th><th>Ke-</th><th class="r">Benar</th><th class="r">Nilai</th><th class="r">Durasi</th></tr></thead><tbody>' +
@@ -3902,7 +3902,7 @@ var Guru = (function (A) {
       var list = Object.keys(stat).map(function (k) { return stat[k]; }).filter(function (s) { return s.n; }).sort(function (a, b) { return a.b / a.n - b.b / b.n; });
       if (!list.length) return '<div class="card empty">' + icon('search') + '<p>Analisis muncul setelah siswa mengerjakan kuis.</p></div>';
       var sukar = list.filter(function (s) { return s.b / s.n <= 0.3; }).length, sedang = list.filter(function (s) { var p = s.b / s.n; return p > 0.3 && p <= 0.7; }).length, mudah = list.length - sukar - sedang;
-      var html = '<div class="kpis">' + kpi(att.length, 'Lembar jawaban dianalisis', '') + kpi(sukar, 'Soal sukar', 'proporsi benar ≤ 0,30') + kpi(sedang, 'Soal sedang', '0,31–0,70') + kpi(mudah, 'Soal mudah', '> 0,70') + '</div>' +
+      var html = '<div class="kpis">' + kpi(att.length, 'Lembar jawaban dianalisis', '') + kpi(sukar, 'Soal sukar', 'proporsi benar \u2264 0,30') + kpi(sedang, 'Soal sedang', '0,31\u20130,70') + kpi(mudah, 'Soal mudah', '> 0,70') + '</div>' +
         '<div class="notice">' + icon('info') + '<p class="small">Soal diurutkan dari yang paling banyak dijawab salah. Perhatikan <b>pengecoh terbanyak</b>: pilihan salah yang paling sering dipilih biasanya menunjukkan miskonsepsi yang perlu diluruskan di kelas.</p></div>';
       html += '<section class="card">' + list.map(function (s) {
         var p = s.b / s.n, pc = Math.round(p * 100), q = s.q;
@@ -3910,7 +3910,7 @@ var Guru = (function (A) {
         var detail;
         if (q.t === 'angka') {
           var salah = Object.keys(s.pilih).filter(function (k) { return Number(k) !== q.a; }).sort(function (a, b) { return s.pilih[b] - s.pilih[a]; }).slice(0, 3);
-          detail = '<div class="small">Kunci: <b class="num">' + A.rp(q.a) + '</b>' + (salah.length ? ' · Jawaban salah terbanyak: ' + salah.map(function (k) { return '<span class="cred">' + (k === '' || k === '-1' ? 'kosong' : A.rp(Number(k))) + '</span> (' + s.pilih[k] + ')'; }).join(', ') : '') + '</div>';
+          detail = '<div class="small">Kunci: <b class="num">' + A.rp(q.a) + '</b>' + (salah.length ? ' \u00b7 Jawaban salah terbanyak: ' + salah.map(function (k) { return '<span class="cred">' + (k === '' || k === '-1' ? 'kosong' : A.rp(Number(k))) + '</span> (' + s.pilih[k] + ')'; }).join(', ') : '') + '</div>';
         } else {
           var maxSalah = -1, idxSalah = -1;
           q.o.forEach(function (o, j) { if (j !== q.a && (s.pilih[j] || 0) > maxSalah) { maxSalah = s.pilih[j] || 0; idxSalah = j; } });
@@ -3919,7 +3919,7 @@ var Guru = (function (A) {
             return '<div class="dist-opt ' + (j === q.a ? 'key' : '') + '"><span class="num">' + 'ABCD'[j] + '</span><div><div class="small" style="line-height:1.3">' + esc(o) + (j === q.a ? ' ' + icon('check') : '') + (j === idxSalah && maxSalah > 0 ? ' <span class="pill warn" style="font-size:.68rem">pengecoh terbanyak</span>' : '') + '</div><div class="bar"><i style="width:' + w + '%;' + (j !== q.a ? 'background:var(--ink-3)' : '') + '"></i></div></div><span class="num small r">' + c + '</span></div>';
           }).join('') + (s.pilih['-1'] ? '<span class="tiny muted">Tidak dijawab: ' + s.pilih['-1'] + '</span>' : '') + '</div>';
         }
-        return '<div class="item-q"><div class="row between"><span class="row" style="gap:6px"><span class="pill info">TP ' + misiNo(q.m) + '</span>' + kat + '</span><span class="small"><b class="num">' + pc + '%</b> benar · ' + s.n + ' jawaban</span></div><div class="bar ' + (p > 0.7 ? 'ok' : '') + '"><i style="width:' + pc + '%;' + (p <= 0.7 ? 'background:' + (p <= 0.3 ? 'var(--minus)' : 'var(--warn)') : '') + '"></i></div><div><b>' + esc(q.q) + '</b></div>' + detail + '</div>';
+        return '<div class="item-q"><div class="row between"><span class="row" style="gap:6px"><span class="pill info">TP ' + misiNo(q.m) + '</span>' + kat + '</span><span class="small"><b class="num">' + pc + '%</b> benar \u00b7 ' + s.n + ' jawaban</span></div><div class="bar ' + (p > 0.7 ? 'ok' : '') + '"><i style="width:' + pc + '%;' + (p <= 0.7 ? 'background:' + (p <= 0.3 ? 'var(--minus)' : 'var(--warn)') : '') + '"></i></div><div><b>' + esc(q.q) + '</b></div>' + detail + '</div>';
       }).join('') + '</section>';
       return html;
     });
@@ -3933,15 +3933,15 @@ var Guru = (function (A) {
       var html = '<div class="toolbar"><label class="sr" for="gf-refl">Tampilkan</label><select class="input" id="gf-refl" data-gf="refl"><option value="semua">Semua refleksi (' + all.length + ')</option><option value="belum" ' + (S.gf.reflFilter === 'belum' ? 'selected' : '') + '>Belum dibalas (' + all.filter(function (r) { return !r.balasan; }).length + ')</option></select></div>';
       if (!list.length) return html + '<div class="card empty">' + icon('message') + '<p>' + (all.length ? 'Semua refleksi sudah dibalas.' : 'Belum ada refleksi dari siswa.') + '</p></div>';
       html += '<section class="card">' + list.map(function (r) {
-        return '<div class="refl"><div class="row between nowrap"><span class="row nowrap" style="gap:10px;min-width:0">' + A.moodFace(r.perasaan) + '<span style="min-width:0"><b>' + esc(r.nama) + '</b><span class="tiny muted" style="display:block">' + esc(r.kelas) + ' · ' + A.tgl(r.waktu) + ' · ' + A.MOOD_LABEL[r.perasaan] + '</span></span></span>' + (r.balasan ? '<span class="pill ok">Dibalas</span>' : '<span class="pill warn">Baru</span>') + '</div>' +
+        return '<div class="refl"><div class="row between nowrap"><span class="row nowrap" style="gap:10px;min-width:0">' + A.moodFace(r.perasaan) + '<span style="min-width:0"><b>' + esc(r.nama) + '</b><span class="tiny muted" style="display:block">' + esc(r.kelas) + ' \u00b7 ' + A.tgl(r.waktu) + ' \u00b7 ' + A.MOOD_LABEL[r.perasaan] + '</span></span></span>' + (r.balasan ? '<span class="pill ok">Dibalas</span>' : '<span class="pill warn">Baru</span>') + '</div>' +
           (r.paham ? '<div><span class="lbl">Sudah paham</span><q>' + esc(r.paham) + '</q></div>' : '') + (r.bingung ? '<div><span class="lbl">Masih bingung</span><q>' + esc(r.bingung) + '</q></div>' : '') + (r.pertanyaan ? '<div><span class="lbl">Pertanyaan</span><q>' + esc(r.pertanyaan) + '</q></div>' : '') +
-          '<form class="stack" style="gap:6px" data-form="gBalas"><input type="hidden" name="id" value="' + esc(r.id) + '"><label class="sr" for="bl-' + esc(r.id) + '">Balasan</label><textarea class="input" id="bl-' + esc(r.id) + '" name="balasan" style="min-height:64px" placeholder="Tulis balasan untuk ' + esc(A.firstName(r.nama)) + '…">' + esc(r.balasan) + '</textarea><button class="btn sm" type="submit" style="justify-self:start">' + icon('send') + (r.balasan ? ' Perbarui balasan' : ' Kirim balasan') + '</button></form></div>';
+          '<form class="stack" style="gap:6px" data-form="gBalas"><input type="hidden" name="id" value="' + esc(r.id) + '"><label class="sr" for="bl-' + esc(r.id) + '">Balasan</label><textarea class="input" id="bl-' + esc(r.id) + '" name="balasan" style="min-height:64px" placeholder="Tulis balasan untuk ' + esc(A.firstName(r.nama)) + '\u2026">' + esc(r.balasan) + '</textarea><button class="btn sm" type="submit" style="justify-self:start">' + icon('send') + (r.balasan ? ' Perbarui balasan' : ' Kirim balasan') + '</button></form></div>';
       }).join('') + '</section>';
       return html;
     });
   };
   ACT['form:gBalas'] = function (f) {
-    var btn = f.querySelector('[type=submit]'); A.busy(btn, true, 'Mengirim…');
+    var btn = f.querySelector('[type=submit]'); A.busy(btn, true, 'Mengirim\u2026');
     A.Api.call('balasRefleksi', { id: f.id.value, balasan: f.balasan.value.trim() }).then(function () {
       A.toast('Balasan terkirim. Siswa melihatnya di menu Refleksi.');
       var r = S.dash.refleksi.filter(function (x) { return x.id === f.id.value; })[0]; if (r) r.balasan = f.balasan.value.trim();
